@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptography Example</title>
+</head>
+<body>
+    <h1>RSA</h1>
+    <pre>
+        using System;
+        using System.Collections.Generic;
+        using System.Linq;
+        using System.Text;
+        using System.Threading.Tasks;
+        using System.IO;
+        using System.Security.Cryptography;
+
+        namespace lab_6
+        {
+            class Program
+            {
+                static void Main(string[] args)
+                {
+                    RSACryptoServiceProvider myrsa = new RSACryptoServiceProvider(512);
+                    System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch();
+                    int size;
+                    int count = 100;
+
+                    swatch.Start();
+                    for (int i = 0; i < count; i++)
+                    {
+                        myrsa = new RSACryptoServiceProvider(2048);
+                        size = myrsa.KeySize;
+                    }
+                    swatch.Stop();
+                    Console.WriteLine("Generation time at 1024 bit ... " + (swatch.ElapsedTicks / (10 * count)).ToString() + " ms");
+
+                    byte[] plain = new byte[20];
+                    byte[] ciphertext = myrsa.Encrypt(plain, true);
+                    swatch.Reset();
+                    swatch.Start();
+
+                    for (int i = 0; i < count; i++)
+                    {
+                        ciphertext = myrsa.Encrypt(plain, true);
+                    }
+                    swatch.Stop();
+                    Console.WriteLine("Encryption time at 1024 bit ... " + (swatch.ElapsedTicks / (10 * count)).ToString() + " ms");
+
+                    swatch.Reset();
+                    swatch.Start();
+                    for (int i = 0; i < count; i++)
+                    {
+                        plain = myrsa.Decrypt(ciphertext, true);
+                    }
+                    swatch.Stop();
+                    Console.WriteLine("Decryption time at 1024 bit ... " + (swatch.ElapsedTicks / (10 * count)).ToString() + " ms");
+
+                    RSACryptoServiceProvider myRSA = new RSACryptoServiceProvider(2048);
+                    AesManaged myAES = new AesManaged();
+                    byte[] RSAciphertext;
+                    byte[] plaintext;
+
+                    // Generate an AES key
+                    myAES.GenerateKey();
+
+                    // Encrypt an AES key with RSA
+                    RSAciphertext = myRSA.Encrypt(myAES.Key, true);
+
+                    // Decrypt and recover the AES key
+                    plaintext = myRSA.Decrypt(RSAciphertext, true);
+
+                    SHA256Managed myHash = new SHA256Managed();
+                    string some_text = "this is an important message";
+
+                    // Sign the message
+                    byte[] signature = myRSA.SignData(System.Text.Encoding.ASCII.GetBytes(some_text), myHash);
+
+                    // Verify a signature on a given message
+                    bool verified = myRSA.VerifyData(System.Text.Encoding.ASCII.GetBytes(some_text), myHash, signature);
+                }
+            }
+        }
+    </pre>
+    <h1>DSA</h1>
+    <pre>
+        using System;
+using System.Security.Cryptography;
+
+namespace lab_6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            DSACryptoServiceProvider myDSA = new DSACryptoServiceProvider(2048);
+            System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch();
+            int count = 100;
+
+            // Generate a DSA key
+            swatch.Start();
+            for (int i = 0; i < count; i++)
+            {
+                myDSA = new DSACryptoServiceProvider(2048);
+            }
+            swatch.Stop();
+            Console.WriteLine("Key generation time at 2048 bit ... " + (swatch.ElapsedTicks / (10 * count)).ToString() + " ms");
+
+            // Message to sign
+            string message = "This is an important message";
+            byte[] messageBytes = System.Text.Encoding.ASCII.GetBytes(message);
+
+            // Sign the message
+            swatch.Reset();
+            swatch.Start();
+            byte[] signature = null;
+            for (int i = 0; i < count; i++)
+            {
+                signature = myDSA.SignData(messageBytes);
+            }
+            swatch.Stop();
+            Console.WriteLine("Signing time at 2048 bit ... " + (swatch.ElapsedTicks / (10 * count)).ToString() + " ms");
+
+            // Verify the signature
+            swatch.Reset();
+            swatch.Start();
+            bool verified = false;
+            for (int i = 0; i < count; i++)
+            {
+                verified = myDSA.VerifyData(messageBytes, signature);
+            }
+            swatch.Stop();
+            Console.WriteLine("Verification time at 2048 bit ... " + (swatch.ElapsedTicks / (10 * count)).ToString() + " ms");
+
+            Console.WriteLine("Signature verified: " + verified);
+        }
+    }
+}
+    </pre>
+    <h1>Java BIG number</h1>
+    <pre>
+        import java.math.BigInteger;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        BigInteger n= new BigInteger("837210799");
+        BigInteger e= new BigInteger("7");
+        BigInteger d= new BigInteger("478341751");
+
+        BigInteger one= BigInteger.ONE;
+        BigInteger k;
+        k=d.multiply(e).subtract(one).divide(n).add(one);
+        BigInteger p_plus_q;
+        p_plus_q= k.multiply(n.add(one)).add(one.subtract(e.multiply(d))).divide(k);
+        System.out.println("p+q: "+p_plus_q.toString());
+        BigInteger delta;
+        delta= p_plus_q.multiply(p_plus_q).subtract(k.multiply(n));
+        BigInteger two= new BigInteger("2");
+        BigInteger x1= p_plus_q.add(delta.sqrt()).divide(two);
+        System.out.println("delta: "+delta.toString());
+        System.out.println("x1: "+x1.toString());
+        BigInteger x2= p_plus_q.subtract(delta.sqrt()).divide(two);
+        System.out.println("x2: "+x2.toString());
+    }
+}
+
+    </pre>
+    <h1>Java Cryptography Example</h1>
+    <pre>
+        import java.security.Key; 
+        import java.security.KeyPair; 
+        import java.security.KeyPairGenerator; 
+        import java.security.SecureRandom; 
+        import javax.crypto.Cipher;
+        import javax.crypto.SecretKeyFactory;
+        import javax.crypto.SecretKey;
+        import java.math.BigInteger;
+        import javax.crypto.spec.PBEKeySpec;
+        import javax.crypto.spec.SecretKeySpec; 
+
+        public class App {
+            public static void main(String[] args) throws Exception {
+                byte[] keyBytes = new byte[16];
+                SecureRandom myPRNG = new SecureRandom();
+
+                char[] password = "short_password".toCharArray();
+                byte[] salt = new byte[16]; 
+                int iteration_count = 10000; 
+                int key_length = 128;
+
+                myPRNG.nextBytes(salt);
+                SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
+                PBEKeySpec pbecSpec = new PBEKeySpec(password, salt, iteration_count, key_length);
+                SecretKey myAESPBKey = new SecretKeySpec(keyFactory.generateSecret(pbecSpec).getEncoded(), "AES");
+                keyBytes = myAESPBKey.getEncoded();
+                System.out.println("AES key: " + new BigInteger(myAESPBKey.getEncoded()).toString(16));
+
+                SecretKeySpec myKey = new SecretKeySpec(keyBytes, "AES");
+                Cipher myAES = Cipher.getInstance("AES/ECB/NoPadding");
+
+                byte[] plaintext = new byte[16];
+                byte[] ciphertext = new byte[16];
+                myAES.init(Cipher.ENCRYPT_MODE, myKey);
+                int cLength = myAES.update(plaintext, 0, plaintext.length, ciphertext, 0);
+                cLength += myAES.doFinal(ciphertext, cLength);
+
+                System.out.println("plaintext: " + new BigInteger(plaintext).toString(16));
+                System.out.println("ciphertext: " + new BigInteger(ciphertext).toString(16));
+
+                myAES.init(Cipher.DECRYPT_MODE, myKey);
+                byte[] dec_plaintext = new byte[16];
+                cLength = myAES.update(ciphertext, 0, ciphertext.length, dec_plaintext, 0);
+                cLength += myAES.doFinal(dec_plaintext, cLength);
+
+                System.out.println("decrypted: " + new BigInteger(dec_plaintext).toString(16));
+
+                KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");
+                keyGen.initialize(2048, myPRNG);
+                KeyPair myRSAKeyPair = keyGen.generateKeyPair();
+
+                Cipher myRSA = Cipher.getInstance("RSA/ECB/PKCS1Padding");
+                Key pbKey = myRSAKeyPair.getPublic();
+                Key pvKey = myRSAKeyPair.getPrivate();
+
+                myRSA.init(Cipher.ENCRYPT_MODE, pbKey);
+                ciphertext = myRSA.doFinal(keyBytes);
+
+                myRSA.init(Cipher.DECRYPT_MODE, pvKey);
+                plaintext = myRSA.doFinal(ciphertext);
+
+                System.out.println("plaintext: " + new BigInteger(plaintext).toString(16));
+                System.out.println("ciphertext: " + new BigInteger(ciphertext).toString(16));
+                System.out.println("keybytes: " + new BigInteger(keyBytes).toString(16));
+
+                String plain = "ABCDEFGH12345678"; // 16 bytes
+                plaintext = plain.getBytes();
+            }
+        }
+    </pre>
+</body>
+</html>
