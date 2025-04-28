@@ -94,7 +94,7 @@ namespace lab_6
     {
         static void Main(string[] args)
         {
-            DSACryptoServiceProvider myDSA = new DSACryptoServiceProvider(2048);
+            DSACryptoServiceProvider myDSA = new DSACryptoServiceProvider(1024); // Changed key size to 1024
             System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch();
             int count = 100;
 
@@ -102,10 +102,10 @@ namespace lab_6
             swatch.Start();
             for (int i = 0; i < count; i++)
             {
-                myDSA = new DSACryptoServiceProvider(2048);
+                myDSA = new DSACryptoServiceProvider(1024); // Changed key size to 1024
             }
             swatch.Stop();
-            Console.WriteLine("Key generation time at 2048 bit ... " + (swatch.ElapsedTicks / (10 * count)).ToString() + " ms");
+            Console.WriteLine("Key generation time at 1024 bit ... " + (swatch.ElapsedTicks / (10 * count)).ToString() + " ms");
 
             // Message to sign
             string message = "This is an important message";
@@ -120,7 +120,7 @@ namespace lab_6
                 signature = myDSA.SignData(messageBytes);
             }
             swatch.Stop();
-            Console.WriteLine("Signing time at 2048 bit ... " + (swatch.ElapsedTicks / (10 * count)).ToString() + " ms");
+            Console.WriteLine("Signing time at 1024 bit ... " + (swatch.ElapsedTicks / (10 * count)).ToString() + " ms");
 
             // Verify the signature
             swatch.Reset();
@@ -131,7 +131,7 @@ namespace lab_6
                 verified = myDSA.VerifyData(messageBytes, signature);
             }
             swatch.Stop();
-            Console.WriteLine("Verification time at 2048 bit ... " + (swatch.ElapsedTicks / (10 * count)).ToString() + " ms");
+            Console.WriteLine("Verification time at 1024 bit ... " + (swatch.ElapsedTicks / (10 * count)).ToString() + " ms");
 
             Console.WriteLine("Signature verified: " + verified);
         }
