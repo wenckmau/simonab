@@ -1,0 +1,501 @@
+{
+  "version": 1,
+  "generated": "2025-12-14",
+  "questions": [
+    {
+      "id": "oop_binding_1",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "În Java, pentru ce fel de metode legarea (binding) este timpurie (statică) și pentru ce fel este dinamică?",
+      "choices": [
+        "Timpurie pentru toate metodele; dinamică doar pentru constructori",
+        "Timpurie pentru metodele finale sau statice; dinamică pentru celelalte metode",
+        "Timpurie doar pentru metodele abstracte; dinamică pentru cele finale",
+        "Timpurie pentru metodele private; dinamică pentru cele publice"
+      ],
+      "answer": 1,
+      "explain": "Conform cursului de OOP: în Java pentru metodele finale sau statice legarea este timpurie, iar pentru celelalte este dinamică.",
+      "source": "turn0file1"
+    },
+    {
+      "id": "oop_inheritance_1",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Relația de moștenire între clase este descrisă în mod tipic ca:",
+      "choices": [
+        "\"has A\" (are o)",
+        "\"is A\" (este un fel de)",
+        "\"part of\" (parte din)",
+        "\"uses A\" (folosește)"
+      ],
+      "answer": 1,
+      "explain": "Cursul precizează că moștenirea este o relație de tip „is A”.",
+      "source": "turn0file1"
+    },
+    {
+      "id": "oop_aggregation_composition_1",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Care afirmație descrie corect compoziția (față de agregare)?",
+      "choices": [
+        "Distrugerea obiectului principal NU implică distrugerea obiectelor legate",
+        "Este o asociere slabă între clase",
+        "Distrugerea obiectului principal implică distrugerea obiectelor legate (legătură puternică)",
+        "Este permisă doar pentru clase final"
+      ],
+      "answer": 2,
+      "explain": "Cursul diferențiază: agregarea = asociere slabă; compoziția = asociere puternică, cu dependență de viață a obiectelor.",
+      "source": "turn0file1"
+    },
+    {
+      "id": "oop_static_1",
+      "type": "mcq",
+      "topic": "Static",
+      "q": "Ce este o variabilă membră statică în Java?",
+      "choices": [
+        "O variabilă locală care poate fi accesată global",
+        "O variabilă globală a clasei, alocată o singură dată indiferent de numărul de obiecte",
+        "O variabilă care există doar în constructor",
+        "O variabilă care se poate inițializa doar în blocuri try-catch"
+      ],
+      "answer": 1,
+      "explain": "Cursul spune: variabilele statice sunt variabilele globale ale clasei și se alocă o singură dată.",
+      "source": "turn0file1"
+    },
+    {
+      "id": "oop_static_2",
+      "type": "tf",
+      "topic": "Static",
+      "q": "Variabilele locale pot fi declarate static.",
+      "answer": false,
+      "explain": "Cursul menționează explicit: variabilele locale NU pot fi statice.",
+      "source": "turn0file1"
+    },
+    {
+      "id": "oop_static_block_1",
+      "type": "mcq",
+      "topic": "Static",
+      "q": "Când se execută o secvență de cod static (static { ... }) într-o clasă?",
+      "choices": [
+        "De fiecare dată când se creează un obiect din clasă",
+        "Doar când se apelează main()",
+        "În momentul în care se referă clasa (este încărcată/utilizată)",
+        "Numai când se apelează o metodă de instanță"
+      ],
+      "answer": 2,
+      "explain": "Cursul: secvențele statice se execută în momentul în care se referă clasa care le conține.",
+      "source": "turn0file1"
+    },
+    {
+      "id": "java_versions_1",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Care este principiul urmărit de Java menționat în curs, legat de portabilitate?",
+      "choices": [
+        "Compile Once, Run Fast",
+        "Write Once, Run Anywhere",
+        "Write Twice, Run Anywhere",
+        "Run Once, Debug Anywhere"
+      ],
+      "answer": 1,
+      "explain": "În cursul de bază se menționează principiul \"Write Once, Run Anywhere\".",
+      "source": "turn0file3"
+    },
+    {
+      "id": "java_translation_1",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Traducerea unui program Java în executabil este descrisă în curs ca având două faze. Care sunt acestea?",
+      "choices": [
+        "Linkare și încărcare",
+        "Compilare (în bytecode) și interpretare/execuție pe JVM",
+        "Preprocesare și compilare",
+        "Criptare și decriptare"
+      ],
+      "answer": 1,
+      "explain": "Cursul: compilare text Java -> bytecode și interpretare bytecode -> cod de mașină efectiv.",
+      "source": "turn0file3"
+    },
+    {
+      "id": "exceptions_def_1",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "O excepție în Java este:",
+      "choices": [
+        "Un eveniment care nu permite continuarea normală a execuției programului",
+        "Orice mesaj afișat în consolă",
+        "Un tip special de variabilă statică",
+        "O instrucțiune care oprește compilarea"
+      ],
+      "answer": 0,
+      "explain": "Definiția din curs: excepția e un eveniment care nu permite continuarea normală a execuției.",
+      "source": "turn0file4"
+    },
+    {
+      "id": "exceptions_throwable_1",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "O excepție este un obiect ce aparține cărei ierarhii?",
+      "choices": [
+        "Object",
+        "Throwable",
+        "ExceptionHandler",
+        "ErrorOnly"
+      ],
+      "answer": 1,
+      "explain": "Cursul: o excepție este un obiect ce aparține clasei Throwable sau unei clase derivate.",
+      "source": "turn0file4"
+    },
+    {
+      "id": "exceptions_checked_1",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Checked exceptions trebuie:",
+      "choices": [
+        "Ignorate, altfel programul nu rulează",
+        "Tratate sau declarate cu throws, altfel codul nu compilează",
+        "Tratate doar cu finally",
+        "Convertite în RuntimeException"
+      ],
+      "answer": 1,
+      "explain": "Cursul: checked exceptions trebuie tratate (try-catch-finally) sau declarate cu throws, altfel nu compilează.",
+      "source": "turn0file4"
+    },
+    {
+      "id": "exceptions_unchecked_1",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Unchecked exceptions sunt de obicei derivate din:",
+      "choices": [
+        "IOException",
+        "RuntimeException",
+        "SQLException",
+        "Thread"
+      ],
+      "answer": 1,
+      "explain": "Cursul: unchecked exceptions sunt cele derivate din RuntimeException.",
+      "source": "turn0file4"
+    },
+    {
+      "id": "exceptions_mechanisms_1",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Ce construcție este folosită pentru a emite (arunca) explicit o excepție?",
+      "choices": [
+        "catch",
+        "finally",
+        "throw",
+        "try"
+      ],
+      "answer": 2,
+      "explain": "Cursul enumeră instrucțiunea throw pentru emiterea excepțiilor.",
+      "source": "turn0file4"
+    },
+    {
+      "id": "collections_list_1",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce caracteristică definește cel mai bine o List în Java Collections Framework?",
+      "choices": [
+        "Nu permite duplicate și nu are ordine",
+        "Elementele sunt în ordinea adăugării; duplicatele sunt permise; acces prin indice",
+        "Elementele sunt mereu ordonate natural",
+        "Este doar pentru chei și valori"
+      ],
+      "answer": 1,
+      "explain": "Cursul de colecții: List = secvență, ordine de adăugare, duplicate permise, acces prin index.",
+      "source": "turn0file5"
+    },
+    {
+      "id": "collections_set_1",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce caracteristică definește un Set?",
+      "choices": [
+        "Permite duplicate",
+        "Nu permite elemente duplicat",
+        "Se accesează exclusiv prin index",
+        "Este o coadă FIFO"
+      ],
+      "answer": 1,
+      "explain": "Cursul: Set nu permite elemente duplicat.",
+      "source": "turn0file5"
+    },
+    {
+      "id": "collections_queue_1",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "O Queue în mod tipic ordonează elementele:",
+      "choices": [
+        "LIFO",
+        "FIFO",
+        "Random",
+        "După cheie"
+      ],
+      "answer": 1,
+      "explain": "Cursul: Queue în mod tipic FIFO, cu excepții precum PriorityQueue.",
+      "source": "turn0file5"
+    },
+    {
+      "id": "collections_deque_1",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Deque suportă:",
+      "choices": [
+        "Doar ștergere din mijloc",
+        "Adăugare și eliminare la ambele capete; poate fi folosită ca stivă sau coadă",
+        "Doar mapare cheie-valoare",
+        "Doar sortare automată"
+      ],
+      "answer": 1,
+      "explain": "Cursul: Deque extinde Queue și suportă operații la ambele capete (FIFO/LIFO).",
+      "source": "turn0file5"
+    },
+    {
+      "id": "collections_map_1",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Map reprezintă:",
+      "choices": [
+        "O colecție ordonată de elemente cu index",
+        "O punere în corespondență chei→valori; cheile sunt unice",
+        "O mulțime fără duplicate",
+        "O coadă prioritara"
+      ],
+      "answer": 1,
+      "explain": "Cursul: Map = keys to values; chei unice; valori se pot repeta.",
+      "source": "turn0file5"
+    },
+    {
+      "id": "collections_impl_1",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Care implementare este descrisă ca „cea mai bună” pentru List în curs?",
+      "choices": [
+        "Vector",
+        "ArrayList",
+        "TreeSet",
+        "HashMap"
+      ],
+      "answer": 1,
+      "explain": "Cursul menționează ArrayList ca cea mai bună implementare a interfeței List.",
+      "source": "turn0file5"
+    },
+    {
+      "id": "jdbc_def_1",
+      "type": "mcq",
+      "topic": "JDBC",
+      "q": "JDBC este descris ca o tehnologie care:",
+      "choices": [
+        "Generează automat interfețe grafice",
+        "Permite conectarea la baze de date și oferă metode pentru interogare/actualizare",
+        "Compilă cod Java în nativ fără JVM",
+        "Înlocuiește SQL cu Java pur"
+      ],
+      "answer": 1,
+      "explain": "Cursul JDBC: conectare la baze de date + interogare/actualizare.",
+      "source": "turn0file2"
+    },
+    {
+      "id": "jdbc_packages_1",
+      "type": "mcq",
+      "topic": "JDBC",
+      "q": "Clasele JDBC sunt conținute în pachetele:",
+      "choices": [
+        "java.net și javax.net",
+        "java.sql și javax.sql",
+        "java.db și javax.db",
+        "java.jdbc și javax.jdbc"
+      ],
+      "answer": 1,
+      "explain": "Cursul: clasele JDBC sunt în java.sql și javax.sql.",
+      "source": "turn0file2"
+    },
+    {
+      "id": "jdbc_drivermanager_1",
+      "type": "mcq",
+      "topic": "JDBC",
+      "q": "Ce clasă este folosită pentru a crea conexiunile JDBC?",
+      "choices": [
+        "ConnectionFactory",
+        "DriverManager",
+        "ResultSet",
+        "Scanner"
+      ],
+      "answer": 1,
+      "explain": "Cursul: DriverManager este folosit pentru a crea conexiunile JDBC.",
+      "source": "turn0file2"
+    },
+    {
+      "id": "jdbc_statements_1",
+      "type": "mcq",
+      "topic": "JDBC",
+      "q": "Care interfață JDBC este folosită pentru comenzi SQL simple fără parametri?",
+      "choices": [
+        "PreparedStatement",
+        "CallableStatement",
+        "Statement",
+        "RowSet"
+      ],
+      "answer": 2,
+      "explain": "Cursul enumeră: Statement pentru comenzi simple fără parametri.",
+      "source": "turn0file2"
+    },
+    {
+      "id": "jdbc_prepared_1",
+      "type": "mcq",
+      "topic": "JDBC",
+      "q": "Ce interfață permite instrucțiuni SQL precompilate și parametri de intrare?",
+      "choices": [
+        "Statement",
+        "PreparedStatement",
+        "CallableStatement",
+        "MetaData"
+      ],
+      "answer": 1,
+      "explain": "Cursul: PreparedStatement permite SQL precompilat și parametri.",
+      "source": "turn0file2"
+    },
+    {
+      "id": "jdbc_callable_1",
+      "type": "mcq",
+      "topic": "JDBC",
+      "q": "Ce interfață este folosită pentru executarea procedurilor stocate?",
+      "choices": [
+        "CallableStatement",
+        "PreparedStatement",
+        "Statement",
+        "Transaction"
+      ],
+      "answer": 0,
+      "explain": "Cursul: CallableStatement pentru proceduri stocate.",
+      "source": "turn0file2"
+    },
+    {
+      "id": "jdbc_select_1",
+      "type": "mcq",
+      "topic": "JDBC",
+      "q": "O interogare SELECT în JDBC returnează:",
+      "choices": [
+        "Un int cu numărul de rânduri afectate",
+        "Un ResultSet organizat pe rânduri și coloane",
+        "Un String cu SQL-ul executat",
+        "Un obiect Thread"
+      ],
+      "answer": 1,
+      "explain": "Cursul: SELECT returnează ResultSet (rânduri/coloane) și metadate.",
+      "source": "turn0file2"
+    },
+    {
+      "id": "springboot_def_1",
+      "type": "mcq",
+      "topic": "Spring Boot",
+      "q": "Spring Boot este descris ca:",
+      "choices": [
+        "Un concurent al Spring Framework",
+        "O extensie/wrapper care simplifică dezvoltarea aplicațiilor Java bazate pe Spring",
+        "Un limbaj de programare nou",
+        "Un server de baze de date"
+      ],
+      "answer": 1,
+      "explain": "Cursul: Spring Boot este o extensie a Spring Framework, un wrapper care face mai ușoară utilizarea Spring/Spring MVC.",
+      "source": "turn0file0"
+    },
+    {
+      "id": "springboot_rapiddev_1",
+      "type": "mcq",
+      "topic": "Spring Boot",
+      "q": "Care dintre următoarele sunt menționate ca facilități pentru dezvoltare rapidă în Spring Boot?",
+      "choices": [
+        "Spring Initializr, Starter Projects, Auto Configuration, DevTools",
+        "JNI, JDB, Javadoc, Jar",
+        "HashMap, TreeSet, ArrayDeque",
+        "JSP-only, EJB-only"
+      ],
+      "answer": 0,
+      "explain": "Cursul enumeră: Spring Initializr, Starter Projects, Auto Configuration, DevTools.",
+      "source": "turn0file0"
+    },
+    {
+      "id": "spring_di_1",
+      "type": "mcq",
+      "topic": "Spring Boot",
+      "q": "În Spring, „dependency injection” înseamnă (pe scurt):",
+      "choices": [
+        "Clasele nu pot avea referințe unele către altele",
+        "Obiectele dependente sunt create și injectate în alte clase (constructor/setter/câmp)",
+        "Dependențele sunt eliminate la compilare",
+        "Se folosește doar moștenire"
+      ],
+      "answer": 1,
+      "explain": "Cursul descrie dependența ca asociere între clase și injectarea prin constructor/setter/câmp.",
+      "source": "turn0file0"
+    },
+    {
+      "id": "spring_component_1",
+      "type": "mcq",
+      "topic": "Spring Boot",
+      "q": "Ce face adnotarea @Component în Spring?",
+      "choices": [
+        "Declara o excepție verificată",
+        "Determină Spring să creeze un bean pentru clasă",
+        "Rulează automat teste JUnit",
+        "Transformă clasa în interfață"
+      ],
+      "answer": 1,
+      "explain": "Cursul: @Component determină Spring să creeze un Spring Bean pentru clasa respectivă.",
+      "source": "turn0file0"
+    },
+    {
+      "id": "spring_autowired_1",
+      "type": "mcq",
+      "topic": "Spring Boot",
+      "q": "Ce face @Autowired când e pus pe un câmp?",
+      "choices": [
+        "Forțează compilatorul să optimizeze codul",
+        "Caută un bean compatibil și îl injectează în acel câmp",
+        "Creează automat o bază de date",
+        "Dezactivează IoC"
+      ],
+      "answer": 1,
+      "explain": "Cursul: Spring scanează după un bean de tipul câmpului și îl injectează dacă îl găsește.",
+      "source": "turn0file0"
+    },
+    {
+      "id": "fill_java_packages_1",
+      "type": "fill",
+      "topic": "Java basics",
+      "q": "Completează: Pachetul importat implicit de compilator (conține clasele de bază) este ____.",
+      "answer_text": "java.lang",
+      "explain": "Cursul enumeră pachetele și spune că java.lang este importat implicit.",
+      "source": "turn0file3"
+    },
+    {
+      "id": "fill_exceptions_root_1",
+      "type": "fill",
+      "topic": "Exceptions",
+      "q": "Completează: La rădăcina ierarhiei de clase pentru tratarea excepțiilor se află clasa ____.",
+      "answer_text": "Throwable",
+      "explain": "Cursul arată ierarhia cu Throwable la rădăcină.",
+      "source": "turn0file4"
+    },
+    {
+      "id": "fill_collections_algo_1",
+      "type": "fill",
+      "topic": "Collections",
+      "q": "Completează: Algoritmii pentru manipularea colecțiilor sunt furnizați de clasa ____ (metode statice).",
+      "answer_text": "Collections",
+      "explain": "Cursul precizează că algoritmii sunt în clasa Collections ca metode statice.",
+      "source": "turn0file5"
+    },
+    {
+      "id": "fill_jdbc_result_1",
+      "type": "fill",
+      "topic": "JDBC",
+      "q": "Completează: Interogările SQL (SELECT) în JDBC returnează un obiect numit ____.",
+      "answer_text": "ResultSet",
+      "explain": "Cursul: SELECT returnează ResultSet.",
+      "source": "turn0file2"
+    }
+  ]
+}
