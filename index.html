@@ -3,99 +3,87 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Quiz Java – stil „școala auto”</title>
+  <title>Quiz Java – 100 întrebări</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Quiz Java – stil „școala auto”</h1>
-    <p class="sub">Întrebări din curs (MCQ / Adevărat-Fals / Completare) + repetare adaptivă în browser (localStorage).</p>
-  </header>
+<header>
+  <h1>Quiz Java – 100 întrebări</h1>
+  <p class="sub">Teorie + „ce afișează codul”, stil „școala auto”. Rulează local în browser.</p>
+</header>
 
-  <main>
-    <section class="panel">
-      <div class="row wrap">
-        <div class="field">
-          <label for="mode">Mod</label>
-          <select id="mode">
-            <option value="practice" selected>Practice (adaptiv)</option>
-            <option value="exam">Exam (random, fără explicații până la final)</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="topic">Topic</label>
-          <select id="topic">
-            <option value="all" selected>Toate</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="count">Întrebări</label>
-          <input id="count" type="number" min="5" max="100" value="15" />
-        </div>
-
-        <div class="field">
-          <label>&nbsp;</label>
-          <button id="startBtn">Start</button>
-        </div>
-
-        <div class="field">
-          <label>&nbsp;</label>
-          <button id="resetBtn" class="ghost" title="Șterge progresul salvat în browser">Reset progres</button>
-        </div>
-      </div>
-      <div class="hint">
-        Tip: în Practice, întrebările greșite revin mai des. În Exam, primești feedback la final.
-      </div>
-    </section>
-
-    <section class="panel" id="quizPanel" hidden>
-      <div class="topbar">
-        <div id="progress"></div>
-        <div class="pill" id="topicPill"></div>
+<main>
+  <section class="panel">
+    <div class="row wrap">
+      <div class="field">
+        <label for="mode">Mod</label>
+        <select id="mode">
+          <option value="practice" selected>Practice (adaptiv)</option>
+          <option value="exam">Exam (random, feedback la final)</option>
+        </select>
       </div>
 
-      <div id="questionBox" class="question"></div>
-      <div id="answersBox" class="answers"></div>
-
-      <div class="row wrap">
-        <button id="submitBtn" disabled>Verifică</button>
-        <button id="nextBtn" class="ghost" hidden>Următoarea</button>
-        <button id="quitBtn" class="danger ghost">Ieși</button>
+      <div class="field">
+        <label for="topic">Topic</label>
+        <select id="topic">
+          <option value="all" selected>Toate</option>
+        </select>
       </div>
 
-      <details id="explainBox" class="explain" hidden>
-        <summary>Explicație</summary>
-        <div id="explainText"></div>
-        <div class="src" id="sourceText"></div>
-      </details>
-    </section>
-
-    <section class="panel" id="resultPanel" hidden>
-      <h2>Rezultat</h2>
-      <p id="resultText"></p>
-      <div id="reviewBox"></div>
-      <div class="row wrap">
-        <button id="backBtn" class="ghost">Înapoi</button>
+      <div class="field">
+        <label for="count">Întrebări</label>
+        <input id="count" type="number" min="5" max="100" value="20" />
       </div>
-    </section>
 
-    <section class="panel">
-      <h2>Cum adaugi întrebări</h2>
-      <ol>
-        <li>Deschide <code>questions.json</code>.</li>
-        <li>Adaugă obiecte în lista <code>questions</code> (vezi exemplele existente).</li>
-        <li>Reîncarcă pagina.</li>
-      </ol>
-      <p class="hint">Dacă vrei, îți pot genera automat seturi mari (100–300) din capitolele tale, pe topic.</p>
-    </section>
-  </main>
+      <div class="field">
+        <label>&nbsp;</label>
+        <button id="startBtn">Start</button>
+      </div>
 
-  <footer>
-    <small>Offline. Totul rulează local în browser. Progresul se salvează în <code>localStorage</code>.</small>
-  </footer>
+      <div class="field">
+        <label>&nbsp;</label>
+        <button id="resetBtn" class="ghost">Reset progres</button>
+      </div>
+    </div>
+    <div class="hint">Rulează cu: <code>python -m http.server 8000</code> și deschide <code>http://localhost:8000</code>.</div>
+  </section>
 
-  <script src="app.js"></script>
+  <section class="panel" id="quizPanel" hidden>
+    <div class="topbar">
+      <div id="progress"></div>
+      <div class="pill" id="topicPill"></div>
+    </div>
+
+    <pre id="questionBox" class="question"></pre>
+    <div id="answersBox" class="answers"></div>
+
+    <div class="row wrap">
+      <button id="submitBtn" disabled>Verifică</button>
+      <button id="nextBtn" class="ghost" hidden>Următoarea</button>
+      <button id="quitBtn" class="danger ghost">Ieși</button>
+    </div>
+
+    <details id="explainBox" class="explain" hidden>
+      <summary>Explicație</summary>
+      <div id="explainText"></div>
+      <div class="src" id="sourceText"></div>
+    </details>
+  </section>
+
+  <section class="panel" id="resultPanel" hidden>
+    <h2>Rezultat</h2>
+    <p id="resultText"></p>
+    <div id="reviewBox"></div>
+    <div class="row wrap">
+      <button id="backBtn" class="ghost">Înapoi</button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <small>Offline. Progresul se salvează în <code>localStorage</code>.</small>
+</footer>
+
+<script src="app.js"></script>
 </body>
 </html>

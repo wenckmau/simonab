@@ -17,7 +17,7 @@ button.danger{border-color:#6c2a2a;color:#ffb0b0}
 .hint{margin-top:10px;color:#b9c0cc;font-size:.92rem}
 .topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;gap:10px}
 .pill{font-size:.85rem;padding:4px 10px;border-radius:999px;border:1px solid #2a344a;color:#b9c0cc}
-.question{font-size:1.1rem;margin:8px 0 12px}
+.question{font-size:1.05rem;margin:8px 0 12px;white-space:pre-wrap;background:#0e1320;border:1px solid #2a344a;border-radius:12px;padding:12px}
 .answers{display:flex;flex-direction:column;gap:10px;margin:10px 0 14px}
 .choice{display:flex;gap:10px;align-items:flex-start;padding:10px 12px;border:1px solid #2a344a;border-radius:12px;background:#0e1320}
 .choice input{margin-top:3px}
