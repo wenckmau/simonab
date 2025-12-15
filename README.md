@@ -10,3 +10,7 @@ python -m http.server 8000
 
 Apoi:
 http://localhost:8000
+
+
+## Fix
+- După apăsarea „Verifică”, aplicația arată imediat răspunsul corect + explicația (în ambele moduri).

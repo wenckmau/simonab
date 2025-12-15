@@ -146,26 +146,35 @@ function submit(){
   const q = SESSION.set[SESSION.idx];
   const ua = getUserAnswer(q);
   if(ua===null || ua==="") return;
+
   const ok = isCorrect(q, ua);
+  const corr = correctAnswerText(q);
 
   SESSION.answers.push({
     qText:q.q, correct:ok,
     userAnswer:(q.type==="fill")?ua:String(ua),
-    correctAnswer: correctAnswerText(q),
+    correctAnswer: corr,
     explain:q.explain||""
   });
 
-  if(SESSION.mode==="practice"){
-    els.explainText.textContent = (ok ? "✅ Corect. " : "❌ Greșit. ") + (q.explain||"");
-    els.explainBox.hidden = false;
+  // Always show what was correct + why (immediately), regardless of mode
+  let msg = ok ? "✅ Corect. " : "❌ Greșit. ";
+  msg += "Răspuns corect: " + corr + ".";
+  if(q.explain){
+    msg += " " + q.explain;
   }
+  els.explainText.textContent = msg;
+  els.explainBox.hidden = false;
+
+  // Optional: disable inputs after submit
+  els.answersBox.querySelectorAll("input").forEach(inp => inp.disabled = true);
 
   SESSION.locked=true;
   els.submitBtn.disabled=true;
   els.nextBtn.hidden=false;
   els.nextBtn.focus();
 }
-function next(){
+function next()function next(){
   if(SESSION.idx < SESSION.set.length-1){
     SESSION.idx += 1;
     render();
