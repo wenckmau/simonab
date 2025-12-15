@@ -1,14 +1,12 @@
-# Quiz Java – 100 întrebări (stil „școala auto”)
+# Quiz Java – 200 întrebări (combinate)
+
+## Ce conține
+- 200 întrebări totale (teorie + „ce afișează codul”).
+- Garanție: **fără repetări** în aceeași sesiune de quiz (selecție fără înlocuire).
 
 ## Rulare
-1) Intră în folderul aplicației
-2) Rulează:
-   python -m http.server 8000
-3) Deschide:
-   http://localhost:8000
+În folder:
+python -m http.server 8000
 
-## Moduri
-- Practice: adaptiv (greșelile revin mai des), cu explicații
-- Exam: feedback la final
-
-Întrebările sunt în questions.json.
+Apoi:
+http://localhost:8000

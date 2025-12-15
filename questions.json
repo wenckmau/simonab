@@ -1,204 +1,1968 @@
 {
   "version": 1,
   "generated": "2025-12-15",
+  "count": 200,
+  "meta": {
+    "theory": 150,
+    "code": 80
+  },
   "questions": [
     {
-      "id": "sb_1",
+      "id": "t1",
       "type": "mcq",
-      "topic": "Spring Boot",
-      "q": "Spring Boot este descris în curs ca:",
+      "topic": "Java basics",
+      "q": "Selectează răspunsul: Principiul de portabilitate asociat Java este:",
       "choices": [
-        "un concurent al Spring Framework",
-        "o extensie/wrapper care simplifică dezvoltarea aplicațiilor Java bazate pe Spring",
-        "un limbaj nou",
-        "un server de baze de date"
+        "Compile Once, Run Fast",
+        "Write Once, Run Anywhere",
+        "Run Anywhere, Debug Once",
+        "Write Twice, Run Anywhere"
       ],
       "answer": 1,
-      "explain": "În curs: Spring Boot este o extensie (wrapper) peste Spring/Spring MVC.",
-      "source": "fileciteturn1file0"
+      "explain": "Java urmărește „Write Once, Run Anywhere”."
     },
     {
-      "id": "sb_2",
+      "id": "t2",
       "type": "mcq",
-      "topic": "Spring Boot",
-      "q": "Care sunt menționate ca elemente pentru dezvoltare rapidă în Spring Boot?",
+      "topic": "Java basics",
+      "q": "Alege varianta corectă: Care pachet este importat implicit în Java?",
       "choices": [
-        "Spring Initializr, Starter Projects, Auto Configuration, DevTools",
-        "JNI, JDB, Javadoc, Jar",
-        "HashMap, TreeSet, ArrayDeque",
-        "JSP-only"
+        "java.io",
+        "java.util",
+        "java.sql",
+        "java.lang"
+      ],
+      "answer": 3,
+      "explain": "java.lang este importat implicit."
+    },
+    {
+      "id": "t3",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Selectează răspunsul: Care e adevărat despre String?",
+      "choices": [
+        "nu poate fi concatenat",
+        "este imutabil (immutable)",
+        "nu e obiect",
+        "este tip primitiv"
+      ],
+      "answer": 1,
+      "explain": "String este obiect imutabil."
+    },
+    {
+      "id": "t4",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Alege varianta corectă: Bytecode-ul Java este executat de:",
+      "choices": [
+        "sistemul de fișiere",
+        "Javadoc",
+        "compilatorul C",
+        "JVM"
+      ],
+      "answer": 3,
+      "explain": "JVM execută/interpretează bytecode."
+    },
+    {
+      "id": "t5",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Alege varianta corectă: Care pachet este importat implicit în Java?",
+      "choices": [
+        "java.sql",
+        "java.util",
+        "java.lang",
+        "java.io"
+      ],
+      "answer": 2,
+      "explain": "java.lang este importat implicit."
+    },
+    {
+      "id": "t6",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Care afirmație e corectă? Care e adevărat despre String?",
+      "choices": [
+        "este imutabil (immutable)",
+        "nu poate fi concatenat",
+        "nu e obiect",
+        "este tip primitiv"
       ],
       "answer": 0,
-      "explain": "Lista apare explicit la caracteristici Spring Boot.",
-      "source": "fileciteturn1file1"
+      "explain": "String este obiect imutabil."
     },
     {
-      "id": "sb_3",
+      "id": "t7",
       "type": "mcq",
-      "topic": "Spring Boot",
-      "q": "„Dependency injection” în curs înseamnă (pe scurt):",
+      "topic": "Java basics",
+      "q": "Selectează răspunsul: Care e adevărat despre String?",
       "choices": [
-        "obiectele dependente sunt create/injectate de framework (constructor/setter/câmp)",
-        "dependențele sunt eliminate la compilare",
-        "se folosește doar moștenire",
-        "nu există dependențe între clase"
+        "nu e obiect",
+        "este tip primitiv",
+        "este imutabil (immutable)",
+        "nu poate fi concatenat"
+      ],
+      "answer": 2,
+      "explain": "String este obiect imutabil."
+    },
+    {
+      "id": "t8",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Alege varianta corectă: Care e adevărat despre String?",
+      "choices": [
+        "este imutabil (immutable)",
+        "este tip primitiv",
+        "nu e obiect",
+        "nu poate fi concatenat"
       ],
       "answer": 0,
-      "explain": "Cursul definește dependența și injectarea (constructor, settere, câmpuri).",
-      "source": "fileciteturn1file13"
+      "explain": "String este obiect imutabil."
     },
     {
-      "id": "sb_4",
+      "id": "t9",
       "type": "mcq",
-      "topic": "Spring Boot",
-      "q": "Autoconfigurarea Spring Boot se realizează în funcție de:",
+      "topic": "Java basics",
+      "q": "Selectează răspunsul: Care pachet este importat implicit în Java?",
       "choices": [
-        "doar de application.properties",
-        "dependențele din pom.xml + adnotațiile de configurare + configurări manuale",
-        "doar de versiunea JVM",
-        "doar de baza de date"
+        "java.io",
+        "java.sql",
+        "java.util",
+        "java.lang"
+      ],
+      "answer": 3,
+      "explain": "java.lang este importat implicit."
+    },
+    {
+      "id": "t10",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Alege varianta corectă: Care e adevărat despre String?",
+      "choices": [
+        "este tip primitiv",
+        "nu poate fi concatenat",
+        "nu e obiect",
+        "este imutabil (immutable)"
+      ],
+      "answer": 3,
+      "explain": "String este obiect imutabil."
+    },
+    {
+      "id": "t11",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Care afirmație e corectă? Principiul de portabilitate asociat Java este:",
+      "choices": [
+        "Write Once, Run Anywhere",
+        "Run Anywhere, Debug Once",
+        "Compile Once, Run Fast",
+        "Write Twice, Run Anywhere"
+      ],
+      "answer": 0,
+      "explain": "Java urmărește „Write Once, Run Anywhere”."
+    },
+    {
+      "id": "t12",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Selectează răspunsul: Care modificator permite acces doar în aceeași clasă?",
+      "choices": [
+        "private",
+        "default",
+        "public",
+        "protected"
+      ],
+      "answer": 0,
+      "explain": "private limitează accesul la clasă."
+    },
+    {
+      "id": "t13",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Care afirmație e corectă? Care e adevărat despre String?",
+      "choices": [
+        "este tip primitiv",
+        "este imutabil (immutable)",
+        "nu e obiect",
+        "nu poate fi concatenat"
       ],
       "answer": 1,
-      "explain": "Cursul enumeră factorii: dependențe, adnotații, application.properties.",
-      "source": "fileciteturn1file3"
+      "explain": "String este obiect imutabil."
     },
     {
-      "id": "jdbc_1",
+      "id": "t14",
       "type": "mcq",
-      "topic": "JDBC",
-      "q": "În exemplul din curs, conexiunea la BD este obținută prin:",
+      "topic": "Java basics",
+      "q": "Alege varianta corectă: Principiul de portabilitate asociat Java este:",
       "choices": [
-        "new Connection()",
-        "DriverManager.getConnection(...)",
-        "ResultSet.getConnection()",
-        "Scanner.next()"
+        "Write Twice, Run Anywhere",
+        "Compile Once, Run Fast",
+        "Run Anywhere, Debug Once",
+        "Write Once, Run Anywhere"
+      ],
+      "answer": 3,
+      "explain": "Java urmărește „Write Once, Run Anywhere”."
+    },
+    {
+      "id": "t15",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Întrebare de teorie: Care modificator permite acces doar în aceeași clasă?",
+      "choices": [
+        "public",
+        "private",
+        "default",
+        "protected"
       ],
       "answer": 1,
-      "explain": "Exemplul folosește DriverManager.getConnection.",
-      "source": "fileciteturn1file15"
+      "explain": "private limitează accesul la clasă."
     },
     {
-      "id": "jdbc_2",
+      "id": "t16",
       "type": "mcq",
-      "topic": "JDBC",
-      "q": "În exemplul din curs, pentru comenzi SQL se folosește obiectul:",
+      "topic": "Java basics",
+      "q": "Alege varianta corectă: Care pachet este importat implicit în Java?",
       "choices": [
-        "Statement",
-        "CallableStatement",
+        "java.util",
+        "java.sql",
+        "java.io",
+        "java.lang"
+      ],
+      "answer": 3,
+      "explain": "java.lang este importat implicit."
+    },
+    {
+      "id": "t17",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Care afirmație e corectă? Care e adevărat despre String?",
+      "choices": [
+        "este imutabil (immutable)",
+        "nu poate fi concatenat",
+        "este tip primitiv",
+        "nu e obiect"
+      ],
+      "answer": 0,
+      "explain": "String este obiect imutabil."
+    },
+    {
+      "id": "t18",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Care afirmație e corectă? Principiul de portabilitate asociat Java este:",
+      "choices": [
+        "Run Anywhere, Debug Once",
+        "Compile Once, Run Fast",
+        "Write Twice, Run Anywhere",
+        "Write Once, Run Anywhere"
+      ],
+      "answer": 3,
+      "explain": "Java urmărește „Write Once, Run Anywhere”."
+    },
+    {
+      "id": "t19",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Care afirmație e corectă? Care e adevărat despre String?",
+      "choices": [
+        "este tip primitiv",
+        "este imutabil (immutable)",
+        "nu e obiect",
+        "nu poate fi concatenat"
+      ],
+      "answer": 1,
+      "explain": "String este obiect imutabil."
+    },
+    {
+      "id": "t20",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Alege varianta corectă: Principiul de portabilitate asociat Java este:",
+      "choices": [
+        "Run Anywhere, Debug Once",
+        "Write Once, Run Anywhere",
+        "Compile Once, Run Fast",
+        "Write Twice, Run Anywhere"
+      ],
+      "answer": 1,
+      "explain": "Java urmărește „Write Once, Run Anywhere”."
+    },
+    {
+      "id": "t21",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Alege varianta corectă: Care e adevărat despre String?",
+      "choices": [
+        "este imutabil (immutable)",
+        "nu poate fi concatenat",
+        "este tip primitiv",
+        "nu e obiect"
+      ],
+      "answer": 0,
+      "explain": "String este obiect imutabil."
+    },
+    {
+      "id": "t22",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Selectează răspunsul: Principiul de portabilitate asociat Java este:",
+      "choices": [
+        "Write Once, Run Anywhere",
+        "Run Anywhere, Debug Once",
+        "Write Twice, Run Anywhere",
+        "Compile Once, Run Fast"
+      ],
+      "answer": 0,
+      "explain": "Java urmărește „Write Once, Run Anywhere”."
+    },
+    {
+      "id": "t23",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Alege varianta corectă: Bytecode-ul Java este executat de:",
+      "choices": [
+        "compilatorul C",
+        "sistemul de fișiere",
+        "Javadoc",
+        "JVM"
+      ],
+      "answer": 3,
+      "explain": "JVM execută/interpretează bytecode."
+    },
+    {
+      "id": "t24",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Întrebare de teorie: Care e adevărat despre String?",
+      "choices": [
+        "este tip primitiv",
+        "nu poate fi concatenat",
+        "nu e obiect",
+        "este imutabil (immutable)"
+      ],
+      "answer": 3,
+      "explain": "String este obiect imutabil."
+    },
+    {
+      "id": "t25",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Întrebare de teorie: Bytecode-ul Java este executat de:",
+      "choices": [
+        "JVM",
+        "sistemul de fișiere",
+        "compilatorul C",
+        "Javadoc"
+      ],
+      "answer": 0,
+      "explain": "JVM execută/interpretează bytecode."
+    },
+    {
+      "id": "t26",
+      "type": "tf",
+      "topic": "Java basics",
+      "q": "Selectează răspunsul: Tipurile primitive sunt obiecte.",
+      "answer": false,
+      "explain": "Primitivele nu sunt obiecte; există wrapper."
+    },
+    {
+      "id": "t27",
+      "type": "tf",
+      "topic": "Java basics",
+      "q": "Selectează răspunsul: Tipurile primitive sunt obiecte.",
+      "answer": false,
+      "explain": "Primitivele nu sunt obiecte; există wrapper."
+    },
+    {
+      "id": "t28",
+      "type": "tf",
+      "topic": "Java basics",
+      "q": "Selectează răspunsul: Variabilele locale pot fi declarate static.",
+      "answer": false,
+      "explain": "Variabilele locale nu pot fi static."
+    },
+    {
+      "id": "t29",
+      "type": "tf",
+      "topic": "Java basics",
+      "q": "Care afirmație e corectă? Tipurile primitive sunt obiecte.",
+      "answer": false,
+      "explain": "Primitivele nu sunt obiecte; există wrapper."
+    },
+    {
+      "id": "t30",
+      "type": "tf",
+      "topic": "Java basics",
+      "q": "Selectează răspunsul: Variabilele locale pot fi declarate static.",
+      "answer": false,
+      "explain": "Variabilele locale nu pot fi static."
+    },
+    {
+      "id": "t31",
+      "type": "tf",
+      "topic": "Java basics",
+      "q": "Întrebare de teorie: Operatorul + poate concatena String cu numere.",
+      "answer": true,
+      "explain": "Dacă unul e String, + concatenează."
+    },
+    {
+      "id": "t32",
+      "type": "tf",
+      "topic": "Java basics",
+      "q": "Selectează răspunsul: Tipurile primitive sunt obiecte.",
+      "answer": false,
+      "explain": "Primitivele nu sunt obiecte; există wrapper."
+    },
+    {
+      "id": "t33",
+      "type": "tf",
+      "topic": "Java basics",
+      "q": "Întrebare de teorie: Operatorul + poate concatena String cu numere.",
+      "answer": true,
+      "explain": "Dacă unul e String, + concatenează."
+    },
+    {
+      "id": "t34",
+      "type": "tf",
+      "topic": "Java basics",
+      "q": "Întrebare de teorie: Variabilele locale pot fi declarate static.",
+      "answer": false,
+      "explain": "Variabilele locale nu pot fi static."
+    },
+    {
+      "id": "t35",
+      "type": "tf",
+      "topic": "Java basics",
+      "q": "Alege varianta corectă: Tipurile primitive sunt obiecte.",
+      "answer": false,
+      "explain": "Primitivele nu sunt obiecte; există wrapper."
+    },
+    {
+      "id": "t36",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Care afirmație e corectă? Overloading înseamnă:",
+      "choices": [
+        "aceeași semnătură, altă implementare",
+        "același nume, listă de parametri diferită",
+        "nume diferit, aceiași parametri",
+        "doar metode statice"
+      ],
+      "answer": 1,
+      "explain": "Overloading: același nume, semnături (parametri) diferite."
+    },
+    {
+      "id": "t37",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Care afirmație e corectă? Moștenirea (inheritance) este o relație de tip:",
+      "choices": [
+        "is-a",
+        "uses-a",
+        "has-a",
+        "part-of"
+      ],
+      "answer": 0,
+      "explain": "Moștenirea exprimă „is-a”."
+    },
+    {
+      "id": "t38",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Selectează răspunsul: Moștenirea (inheritance) este o relație de tip:",
+      "choices": [
+        "is-a",
+        "uses-a",
+        "has-a",
+        "part-of"
+      ],
+      "answer": 0,
+      "explain": "Moștenirea exprimă „is-a”."
+    },
+    {
+      "id": "t39",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Alege varianta corectă: Polimorfismul dinamic în Java înseamnă că metoda este aleasă după:",
+      "choices": [
+        "obiectul real (runtime)",
+        "pachet",
+        "numele fișierului",
+        "tipul referinței"
+      ],
+      "answer": 0,
+      "explain": "La runtime se alege metoda suprascrisă a obiectului real."
+    },
+    {
+      "id": "t40",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Alege varianta corectă: Overriding înseamnă:",
+      "choices": [
+        "suprascriere în subclasă cu aceeași semnătură",
+        "metodă cu nume diferit",
+        "doar pentru constructori",
+        "doar pentru metode private"
+      ],
+      "answer": 0,
+      "explain": "Overriding: aceeași semnătură, implementare în subclasă."
+    },
+    {
+      "id": "t41",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Selectează răspunsul: Moștenirea (inheritance) este o relație de tip:",
+      "choices": [
+        "uses-a",
+        "is-a",
+        "has-a",
+        "part-of"
+      ],
+      "answer": 1,
+      "explain": "Moștenirea exprimă „is-a”."
+    },
+    {
+      "id": "t42",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Întrebare de teorie: Polimorfismul dinamic în Java înseamnă că metoda este aleasă după:",
+      "choices": [
+        "obiectul real (runtime)",
+        "pachet",
+        "tipul referinței",
+        "numele fișierului"
+      ],
+      "answer": 0,
+      "explain": "La runtime se alege metoda suprascrisă a obiectului real."
+    },
+    {
+      "id": "t43",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Care afirmație e corectă? Overloading înseamnă:",
+      "choices": [
+        "aceeași semnătură, altă implementare",
+        "același nume, listă de parametri diferită",
+        "nume diferit, aceiași parametri",
+        "doar metode statice"
+      ],
+      "answer": 1,
+      "explain": "Overloading: același nume, semnături (parametri) diferite."
+    },
+    {
+      "id": "t44",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Selectează răspunsul: Moștenirea (inheritance) este o relație de tip:",
+      "choices": [
+        "part-of",
+        "is-a",
+        "uses-a",
+        "has-a"
+      ],
+      "answer": 1,
+      "explain": "Moștenirea exprimă „is-a”."
+    },
+    {
+      "id": "t45",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Care afirmație e corectă? Polimorfismul dinamic în Java înseamnă că metoda este aleasă după:",
+      "choices": [
+        "numele fișierului",
+        "tipul referinței",
+        "pachet",
+        "obiectul real (runtime)"
+      ],
+      "answer": 3,
+      "explain": "La runtime se alege metoda suprascrisă a obiectului real."
+    },
+    {
+      "id": "t46",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Întrebare de teorie: Ce descrie cel mai bine incapsularea?",
+      "choices": [
+        "face variabilele statice",
+        "ascunde detaliile interne și controlează accesul",
+        "înlocuiește polimorfismul",
+        "permite moștenire multiplă"
+      ],
+      "answer": 1,
+      "explain": "Incapsularea ascunde implementarea și expune o interfață."
+    },
+    {
+      "id": "t47",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Întrebare de teorie: Overriding înseamnă:",
+      "choices": [
+        "doar pentru constructori",
+        "suprascriere în subclasă cu aceeași semnătură",
+        "doar pentru metode private",
+        "metodă cu nume diferit"
+      ],
+      "answer": 1,
+      "explain": "Overriding: aceeași semnătură, implementare în subclasă."
+    },
+    {
+      "id": "t48",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Întrebare de teorie: Overriding înseamnă:",
+      "choices": [
+        "doar pentru metode private",
+        "metodă cu nume diferit",
+        "doar pentru constructori",
+        "suprascriere în subclasă cu aceeași semnătură"
+      ],
+      "answer": 3,
+      "explain": "Overriding: aceeași semnătură, implementare în subclasă."
+    },
+    {
+      "id": "t49",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Întrebare de teorie: Overriding înseamnă:",
+      "choices": [
+        "doar pentru constructori",
+        "metodă cu nume diferit",
+        "doar pentru metode private",
+        "suprascriere în subclasă cu aceeași semnătură"
+      ],
+      "answer": 3,
+      "explain": "Overriding: aceeași semnătură, implementare în subclasă."
+    },
+    {
+      "id": "t50",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Care afirmație e corectă? Ce descrie cel mai bine incapsularea?",
+      "choices": [
+        "înlocuiește polimorfismul",
+        "face variabilele statice",
+        "ascunde detaliile interne și controlează accesul",
+        "permite moștenire multiplă"
+      ],
+      "answer": 2,
+      "explain": "Incapsularea ascunde implementarea și expune o interfață."
+    },
+    {
+      "id": "t51",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Alege varianta corectă: Polimorfismul dinamic în Java înseamnă că metoda este aleasă după:",
+      "choices": [
+        "numele fișierului",
+        "pachet",
+        "obiectul real (runtime)",
+        "tipul referinței"
+      ],
+      "answer": 2,
+      "explain": "La runtime se alege metoda suprascrisă a obiectului real."
+    },
+    {
+      "id": "t52",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Selectează răspunsul: Polimorfismul dinamic în Java înseamnă că metoda este aleasă după:",
+      "choices": [
+        "tipul referinței",
+        "numele fișierului",
+        "obiectul real (runtime)",
+        "pachet"
+      ],
+      "answer": 2,
+      "explain": "La runtime se alege metoda suprascrisă a obiectului real."
+    },
+    {
+      "id": "t53",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Alege varianta corectă: Polimorfismul dinamic în Java înseamnă că metoda este aleasă după:",
+      "choices": [
+        "numele fișierului",
+        "pachet",
+        "tipul referinței",
+        "obiectul real (runtime)"
+      ],
+      "answer": 3,
+      "explain": "La runtime se alege metoda suprascrisă a obiectului real."
+    },
+    {
+      "id": "t54",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Selectează răspunsul: Overloading înseamnă:",
+      "choices": [
+        "doar metode statice",
+        "nume diferit, aceiași parametri",
+        "aceeași semnătură, altă implementare",
+        "același nume, listă de parametri diferită"
+      ],
+      "answer": 3,
+      "explain": "Overloading: același nume, semnături (parametri) diferite."
+    },
+    {
+      "id": "t55",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Alege varianta corectă: Overriding înseamnă:",
+      "choices": [
+        "metodă cu nume diferit",
+        "suprascriere în subclasă cu aceeași semnătură",
+        "doar pentru metode private",
+        "doar pentru constructori"
+      ],
+      "answer": 1,
+      "explain": "Overriding: aceeași semnătură, implementare în subclasă."
+    },
+    {
+      "id": "t56",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Alege varianta corectă: Moștenirea (inheritance) este o relație de tip:",
+      "choices": [
+        "is-a",
+        "has-a",
+        "uses-a",
+        "part-of"
+      ],
+      "answer": 0,
+      "explain": "Moștenirea exprimă „is-a”."
+    },
+    {
+      "id": "t57",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Selectează răspunsul: Overloading înseamnă:",
+      "choices": [
+        "aceeași semnătură, altă implementare",
+        "nume diferit, aceiași parametri",
+        "același nume, listă de parametri diferită",
+        "doar metode statice"
+      ],
+      "answer": 2,
+      "explain": "Overloading: același nume, semnături (parametri) diferite."
+    },
+    {
+      "id": "t58",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Care afirmație e corectă? Moștenirea (inheritance) este o relație de tip:",
+      "choices": [
+        "uses-a",
+        "has-a",
+        "is-a",
+        "part-of"
+      ],
+      "answer": 2,
+      "explain": "Moștenirea exprimă „is-a”."
+    },
+    {
+      "id": "t59",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Selectează răspunsul: Ce descrie cel mai bine incapsularea?",
+      "choices": [
+        "face variabilele statice",
+        "înlocuiește polimorfismul",
+        "ascunde detaliile interne și controlează accesul",
+        "permite moștenire multiplă"
+      ],
+      "answer": 2,
+      "explain": "Incapsularea ascunde implementarea și expune o interfață."
+    },
+    {
+      "id": "t60",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Care afirmație e corectă? Overriding înseamnă:",
+      "choices": [
+        "metodă cu nume diferit",
+        "doar pentru constructori",
+        "doar pentru metode private",
+        "suprascriere în subclasă cu aceeași semnătură"
+      ],
+      "answer": 3,
+      "explain": "Overriding: aceeași semnătură, implementare în subclasă."
+    },
+    {
+      "id": "t61",
+      "type": "tf",
+      "topic": "OOP",
+      "q": "Selectează răspunsul: Constructorii nu sunt moșteniți.",
+      "answer": true,
+      "explain": "Constructorii nu se moștenesc."
+    },
+    {
+      "id": "t62",
+      "type": "tf",
+      "topic": "OOP",
+      "q": "Alege varianta corectă: Cuvântul cheie this se referă la instanța curentă.",
+      "answer": true,
+      "explain": "this indică obiectul curent."
+    },
+    {
+      "id": "t63",
+      "type": "tf",
+      "topic": "OOP",
+      "q": "Alege varianta corectă: O metodă statică poate fi suprascrisă (override) în sensul polimorfismului dinamic.",
+      "answer": false,
+      "explain": "Metodele statice nu participă la overriding dinamic (se ascund/hide)."
+    },
+    {
+      "id": "t64",
+      "type": "tf",
+      "topic": "OOP",
+      "q": "Care afirmație e corectă? Cuvântul cheie this se referă la instanța curentă.",
+      "answer": true,
+      "explain": "this indică obiectul curent."
+    },
+    {
+      "id": "t65",
+      "type": "tf",
+      "topic": "OOP",
+      "q": "Selectează răspunsul: Cuvântul cheie this se referă la instanța curentă.",
+      "answer": true,
+      "explain": "this indică obiectul curent."
+    },
+    {
+      "id": "t66",
+      "type": "tf",
+      "topic": "OOP",
+      "q": "Întrebare de teorie: O metodă statică poate fi suprascrisă (override) în sensul polimorfismului dinamic.",
+      "answer": false,
+      "explain": "Metodele statice nu participă la overriding dinamic (se ascund/hide)."
+    },
+    {
+      "id": "t67",
+      "type": "tf",
+      "topic": "OOP",
+      "q": "Întrebare de teorie: Cuvântul cheie this se referă la instanța curentă.",
+      "answer": true,
+      "explain": "this indică obiectul curent."
+    },
+    {
+      "id": "t68",
+      "type": "tf",
+      "topic": "OOP",
+      "q": "Întrebare de teorie: Cuvântul cheie this se referă la instanța curentă.",
+      "answer": true,
+      "explain": "this indică obiectul curent."
+    },
+    {
+      "id": "t69",
+      "type": "tf",
+      "topic": "OOP",
+      "q": "Care afirmație e corectă? Constructorii nu sunt moșteniți.",
+      "answer": true,
+      "explain": "Constructorii nu se moștenesc."
+    },
+    {
+      "id": "t70",
+      "type": "tf",
+      "topic": "OOP",
+      "q": "Alege varianta corectă: Cuvântul cheie this se referă la instanța curentă.",
+      "answer": true,
+      "explain": "this indică obiectul curent."
+    },
+    {
+      "id": "t71",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Care afirmație e corectă? Instrucțiunea care aruncă explicit o excepție:",
+      "choices": [
+        "throw",
+        "throws",
+        "try",
+        "catch"
+      ],
+      "answer": 0,
+      "explain": "throw aruncă excepția."
+    },
+    {
+      "id": "t72",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Alege varianta corectă: Unchecked exceptions sunt de obicei derivate din:",
+      "choices": [
+        "RuntimeException",
+        "SQLException",
+        "IOException",
+        "Thread"
+      ],
+      "answer": 0,
+      "explain": "Unchecked: RuntimeException și derivatele ei."
+    },
+    {
+      "id": "t73",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Selectează răspunsul: Unchecked exceptions sunt de obicei derivate din:",
+      "choices": [
+        "SQLException",
+        "IOException",
         "Thread",
-        "File"
+        "RuntimeException"
       ],
-      "answer": 0,
-      "explain": "Exemplul din curs creează Statement și execută query/update.",
-      "source": "fileciteturn1file15"
+      "answer": 3,
+      "explain": "Unchecked: RuntimeException și derivatele ei."
     },
     {
-      "id": "jdbc_3",
+      "id": "t74",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Întrebare de teorie: Checked exceptions trebuie:",
+      "choices": [
+        "tratate sau declarate cu throws",
+        "convertite în Error",
+        "ignorate",
+        "scrise în finally"
+      ],
+      "answer": 0,
+      "explain": "Checked: try/catch sau throws."
+    },
+    {
+      "id": "t75",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Selectează răspunsul: Unchecked exceptions sunt de obicei derivate din:",
+      "choices": [
+        "RuntimeException",
+        "Thread",
+        "IOException",
+        "SQLException"
+      ],
+      "answer": 0,
+      "explain": "Unchecked: RuntimeException și derivatele ei."
+    },
+    {
+      "id": "t76",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Alege varianta corectă: Blocul finally se execută:",
+      "choices": [
+        "niciodată",
+        "în mod normal indiferent de excepție",
+        "doar dacă apare excepție",
+        "doar dacă nu apare excepție"
+      ],
+      "answer": 1,
+      "explain": "finally rulează în mod normal indiferent."
+    },
+    {
+      "id": "t77",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Întrebare de teorie: Unchecked exceptions sunt de obicei derivate din:",
+      "choices": [
+        "IOException",
+        "RuntimeException",
+        "SQLException",
+        "Thread"
+      ],
+      "answer": 1,
+      "explain": "Unchecked: RuntimeException și derivatele ei."
+    },
+    {
+      "id": "t78",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Întrebare de teorie: Unchecked exceptions sunt de obicei derivate din:",
+      "choices": [
+        "SQLException",
+        "IOException",
+        "Thread",
+        "RuntimeException"
+      ],
+      "answer": 3,
+      "explain": "Unchecked: RuntimeException și derivatele ei."
+    },
+    {
+      "id": "t79",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Alege varianta corectă: Blocul finally se execută:",
+      "choices": [
+        "doar dacă nu apare excepție",
+        "în mod normal indiferent de excepție",
+        "doar dacă apare excepție",
+        "niciodată"
+      ],
+      "answer": 1,
+      "explain": "finally rulează în mod normal indiferent."
+    },
+    {
+      "id": "t80",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Selectează răspunsul: Checked exceptions trebuie:",
+      "choices": [
+        "tratate sau declarate cu throws",
+        "convertite în Error",
+        "ignorate",
+        "scrise în finally"
+      ],
+      "answer": 0,
+      "explain": "Checked: try/catch sau throws."
+    },
+    {
+      "id": "t81",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Alege varianta corectă: Instrucțiunea care aruncă explicit o excepție:",
+      "choices": [
+        "throws",
+        "catch",
+        "try",
+        "throw"
+      ],
+      "answer": 3,
+      "explain": "throw aruncă excepția."
+    },
+    {
+      "id": "t82",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Întrebare de teorie: Unchecked exceptions sunt de obicei derivate din:",
+      "choices": [
+        "SQLException",
+        "IOException",
+        "Thread",
+        "RuntimeException"
+      ],
+      "answer": 3,
+      "explain": "Unchecked: RuntimeException și derivatele ei."
+    },
+    {
+      "id": "t83",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Care afirmație e corectă? Checked exceptions trebuie:",
+      "choices": [
+        "tratate sau declarate cu throws",
+        "convertite în Error",
+        "ignorate",
+        "scrise în finally"
+      ],
+      "answer": 0,
+      "explain": "Checked: try/catch sau throws."
+    },
+    {
+      "id": "t84",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Care afirmație e corectă? Unchecked exceptions sunt de obicei derivate din:",
+      "choices": [
+        "IOException",
+        "SQLException",
+        "RuntimeException",
+        "Thread"
+      ],
+      "answer": 2,
+      "explain": "Unchecked: RuntimeException și derivatele ei."
+    },
+    {
+      "id": "t85",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Întrebare de teorie: Unchecked exceptions sunt de obicei derivate din:",
+      "choices": [
+        "Thread",
+        "RuntimeException",
+        "IOException",
+        "SQLException"
+      ],
+      "answer": 1,
+      "explain": "Unchecked: RuntimeException și derivatele ei."
+    },
+    {
+      "id": "t86",
+      "type": "tf",
+      "topic": "Exceptions",
+      "q": "Întrebare de teorie: Un return din finally poate suprascrie return-ul din try.",
+      "answer": true,
+      "explain": "Da, finally poate suprascrie return-ul."
+    },
+    {
+      "id": "t87",
+      "type": "tf",
+      "topic": "Exceptions",
+      "q": "Care afirmație e corectă? Error este un tip de Exception verificată (checked).",
+      "answer": false,
+      "explain": "Error nu e checked Exception."
+    },
+    {
+      "id": "t88",
+      "type": "tf",
+      "topic": "Exceptions",
+      "q": "Care afirmație e corectă? Un return din finally poate suprascrie return-ul din try.",
+      "answer": true,
+      "explain": "Da, finally poate suprascrie return-ul."
+    },
+    {
+      "id": "t89",
+      "type": "tf",
+      "topic": "Exceptions",
+      "q": "Întrebare de teorie: Error este un tip de Exception verificată (checked).",
+      "answer": false,
+      "explain": "Error nu e checked Exception."
+    },
+    {
+      "id": "t90",
+      "type": "tf",
+      "topic": "Exceptions",
+      "q": "Alege varianta corectă: Un return din finally poate suprascrie return-ul din try.",
+      "answer": true,
+      "explain": "Da, finally poate suprascrie return-ul."
+    },
+    {
+      "id": "t91",
+      "type": "tf",
+      "topic": "Exceptions",
+      "q": "Alege varianta corectă: Un return din finally poate suprascrie return-ul din try.",
+      "answer": true,
+      "explain": "Da, finally poate suprascrie return-ul."
+    },
+    {
+      "id": "t92",
+      "type": "tf",
+      "topic": "Exceptions",
+      "q": "Întrebare de teorie: Un return din finally poate suprascrie return-ul din try.",
+      "answer": true,
+      "explain": "Da, finally poate suprascrie return-ul."
+    },
+    {
+      "id": "t93",
+      "type": "tf",
+      "topic": "Exceptions",
+      "q": "Alege varianta corectă: Error este un tip de Exception verificată (checked).",
+      "answer": false,
+      "explain": "Error nu e checked Exception."
+    },
+    {
+      "id": "t94",
+      "type": "tf",
+      "topic": "Exceptions",
+      "q": "Întrebare de teorie: Un return din finally poate suprascrie return-ul din try.",
+      "answer": true,
+      "explain": "Da, finally poate suprascrie return-ul."
+    },
+    {
+      "id": "t95",
+      "type": "tf",
+      "topic": "Exceptions",
+      "q": "Care afirmație e corectă? Un return din finally poate suprascrie return-ul din try.",
+      "answer": true,
+      "explain": "Da, finally poate suprascrie return-ul."
+    },
+    {
+      "id": "t96",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Care afirmație e corectă? Map reprezintă:",
+      "choices": [
+        "o secvență indexată",
+        "o coadă LIFO",
+        "o mulțime sortată mereu",
+        "corespondență chei→valori; chei unice"
+      ],
+      "answer": 3,
+      "explain": "Map: chei unice către valori."
+    },
+    {
+      "id": "t97",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Alege varianta corectă: Map reprezintă:",
+      "choices": [
+        "corespondență chei→valori; chei unice",
+        "o coadă LIFO",
+        "o secvență indexată",
+        "o mulțime sortată mereu"
+      ],
+      "answer": 0,
+      "explain": "Map: chei unice către valori."
+    },
+    {
+      "id": "t98",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Alege varianta corectă: Queue este tipic:",
+      "choices": [
+        "FIFO",
+        "cheie→valoare",
+        "LIFO",
+        "Random"
+      ],
+      "answer": 0,
+      "explain": "Queue: FIFO (în general)."
+    },
+    {
+      "id": "t99",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Alege varianta corectă: Map reprezintă:",
+      "choices": [
+        "o mulțime sortată mereu",
+        "o coadă LIFO",
+        "o secvență indexată",
+        "corespondență chei→valori; chei unice"
+      ],
+      "answer": 3,
+      "explain": "Map: chei unice către valori."
+    },
+    {
+      "id": "t100",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Care afirmație e corectă? Care structură permite duplicate și păstrează ordinea?",
+      "choices": [
+        "Queue",
+        "Map",
+        "List",
+        "Set"
+      ],
+      "answer": 2,
+      "explain": "List: ordine + duplicate permise."
+    },
+    {
+      "id": "t101",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Selectează răspunsul: Map reprezintă:",
+      "choices": [
+        "corespondență chei→valori; chei unice",
+        "o coadă LIFO",
+        "o mulțime sortată mereu",
+        "o secvență indexată"
+      ],
+      "answer": 0,
+      "explain": "Map: chei unice către valori."
+    },
+    {
+      "id": "t102",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Selectează răspunsul: Care structură permite duplicate și păstrează ordinea?",
+      "choices": [
+        "List",
+        "Queue",
+        "Set",
+        "Map"
+      ],
+      "answer": 0,
+      "explain": "List: ordine + duplicate permise."
+    },
+    {
+      "id": "t103",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Întrebare de teorie: Care structură NU permite duplicate?",
+      "choices": [
+        "Set",
+        "List",
+        "Vector",
+        "ArrayList"
+      ],
+      "answer": 0,
+      "explain": "Set nu permite duplicate."
+    },
+    {
+      "id": "t104",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Care afirmație e corectă? Map reprezintă:",
+      "choices": [
+        "o secvență indexată",
+        "o mulțime sortată mereu",
+        "o coadă LIFO",
+        "corespondență chei→valori; chei unice"
+      ],
+      "answer": 3,
+      "explain": "Map: chei unice către valori."
+    },
+    {
+      "id": "t105",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Întrebare de teorie: Care structură permite duplicate și păstrează ordinea?",
+      "choices": [
+        "List",
+        "Map",
+        "Queue",
+        "Set"
+      ],
+      "answer": 0,
+      "explain": "List: ordine + duplicate permise."
+    },
+    {
+      "id": "t106",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Selectează răspunsul: Deque permite:",
+      "choices": [
+        "doar chei și valori",
+        "operații la ambele capete",
+        "doar adăugare la început",
+        "doar sortare"
+      ],
+      "answer": 1,
+      "explain": "Deque: la ambele capete."
+    },
+    {
+      "id": "t107",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Care afirmație e corectă? Care structură permite duplicate și păstrează ordinea?",
+      "choices": [
+        "Set",
+        "List",
+        "Map",
+        "Queue"
+      ],
+      "answer": 1,
+      "explain": "List: ordine + duplicate permise."
+    },
+    {
+      "id": "t108",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Întrebare de teorie: Deque permite:",
+      "choices": [
+        "doar chei și valori",
+        "doar sortare",
+        "doar adăugare la început",
+        "operații la ambele capete"
+      ],
+      "answer": 3,
+      "explain": "Deque: la ambele capete."
+    },
+    {
+      "id": "t109",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Selectează răspunsul: Care structură NU permite duplicate?",
+      "choices": [
+        "ArrayList",
+        "List",
+        "Set",
+        "Vector"
+      ],
+      "answer": 2,
+      "explain": "Set nu permite duplicate."
+    },
+    {
+      "id": "t110",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Alege varianta corectă: Care structură NU permite duplicate?",
+      "choices": [
+        "Vector",
+        "Set",
+        "ArrayList",
+        "List"
+      ],
+      "answer": 1,
+      "explain": "Set nu permite duplicate."
+    },
+    {
+      "id": "t111",
+      "type": "tf",
+      "topic": "Collections",
+      "q": "Selectează răspunsul: ArrayList oferă acces prin index.",
+      "answer": true,
+      "explain": "List -> index."
+    },
+    {
+      "id": "t112",
+      "type": "tf",
+      "topic": "Collections",
+      "q": "Alege varianta corectă: HashSet păstrează ordinea inserării garantat.",
+      "answer": false,
+      "explain": "HashSet nu garantează ordinea."
+    },
+    {
+      "id": "t113",
+      "type": "tf",
+      "topic": "Collections",
+      "q": "Întrebare de teorie: ArrayList oferă acces prin index.",
+      "answer": true,
+      "explain": "List -> index."
+    },
+    {
+      "id": "t114",
+      "type": "tf",
+      "topic": "Collections",
+      "q": "Întrebare de teorie: HashSet păstrează ordinea inserării garantat.",
+      "answer": false,
+      "explain": "HashSet nu garantează ordinea."
+    },
+    {
+      "id": "t115",
+      "type": "tf",
+      "topic": "Collections",
+      "q": "Care afirmație e corectă? HashSet păstrează ordinea inserării garantat.",
+      "answer": false,
+      "explain": "HashSet nu garantează ordinea."
+    },
+    {
+      "id": "t116",
+      "type": "tf",
+      "topic": "Collections",
+      "q": "Selectează răspunsul: HashSet păstrează ordinea inserării garantat.",
+      "answer": false,
+      "explain": "HashSet nu garantează ordinea."
+    },
+    {
+      "id": "t117",
+      "type": "tf",
+      "topic": "Collections",
+      "q": "Care afirmație e corectă? ArrayList oferă acces prin index.",
+      "answer": true,
+      "explain": "List -> index."
+    },
+    {
+      "id": "t118",
+      "type": "tf",
+      "topic": "Collections",
+      "q": "Întrebare de teorie: HashSet păstrează ordinea inserării garantat.",
+      "answer": false,
+      "explain": "HashSet nu garantează ordinea."
+    },
+    {
+      "id": "t119",
+      "type": "tf",
+      "topic": "Collections",
+      "q": "Întrebare de teorie: ArrayList oferă acces prin index.",
+      "answer": true,
+      "explain": "List -> index."
+    },
+    {
+      "id": "t120",
+      "type": "tf",
+      "topic": "Collections",
+      "q": "Selectează răspunsul: ArrayList oferă acces prin index.",
+      "answer": true,
+      "explain": "List -> index."
+    },
+    {
+      "id": "t121",
       "type": "mcq",
       "topic": "JDBC",
-      "q": "În exemplul din curs, rezultatul unei interogări SELECT este:",
+      "q": "Întrebare de teorie: Pachetele principale JDBC sunt:",
+      "choices": [
+        "java.jdbc, javax.jdbc",
+        "java.db, javax.db",
+        "java.net, javax.net",
+        "java.sql, javax.sql"
+      ],
+      "answer": 3,
+      "explain": "JDBC: java.sql și javax.sql."
+    },
+    {
+      "id": "t122",
+      "type": "mcq",
+      "topic": "JDBC",
+      "q": "Întrebare de teorie: Pachetele principale JDBC sunt:",
+      "choices": [
+        "java.jdbc, javax.jdbc",
+        "java.sql, javax.sql",
+        "java.db, javax.db",
+        "java.net, javax.net"
+      ],
+      "answer": 1,
+      "explain": "JDBC: java.sql și javax.sql."
+    },
+    {
+      "id": "t123",
+      "type": "mcq",
+      "topic": "JDBC",
+      "q": "Selectează răspunsul: Pentru SQL fără parametri folosești:",
+      "choices": [
+        "RowSet",
+        "PreparedStatement",
+        "Statement",
+        "CallableStatement"
+      ],
+      "answer": 2,
+      "explain": "Statement: comenzi simple."
+    },
+    {
+      "id": "t124",
+      "type": "mcq",
+      "topic": "JDBC",
+      "q": "Întrebare de teorie: Pachetele principale JDBC sunt:",
+      "choices": [
+        "java.jdbc, javax.jdbc",
+        "java.sql, javax.sql",
+        "java.net, javax.net",
+        "java.db, javax.db"
+      ],
+      "answer": 1,
+      "explain": "JDBC: java.sql și javax.sql."
+    },
+    {
+      "id": "t125",
+      "type": "mcq",
+      "topic": "JDBC",
+      "q": "Alege varianta corectă: SELECT returnează:",
+      "choices": [
+        "boolean",
+        "ResultSet",
+        "int",
+        "void"
+      ],
+      "answer": 1,
+      "explain": "SELECT -> ResultSet"
+    },
+    {
+      "id": "t126",
+      "type": "mcq",
+      "topic": "JDBC",
+      "q": "Selectează răspunsul: Pentru SQL fără parametri folosești:",
+      "choices": [
+        "CallableStatement",
+        "RowSet",
+        "Statement",
+        "PreparedStatement"
+      ],
+      "answer": 2,
+      "explain": "Statement: comenzi simple."
+    },
+    {
+      "id": "t127",
+      "type": "mcq",
+      "topic": "JDBC",
+      "q": "Care afirmație e corectă? SELECT returnează:",
       "choices": [
         "int",
         "ResultSet",
-        "String",
+        "void",
         "boolean"
       ],
       "answer": 1,
-      "explain": "Se folosește ResultSet rs = statement.executeQuery(sql).",
-      "source": "fileciteturn1file15"
+      "explain": "SELECT -> ResultSet"
     },
     {
-      "id": "oop_dyn_1",
-      "type": "mcq",
-      "topic": "OOP",
-      "q": "În exemplul de „legare dinamică” (constructor), metoda apelată la x=calcul() este:",
-      "choices": [
-        "calcul() din SuperClasa",
-        "calcul() din SubClasa",
-        "nu se apelează nicio metodă",
-        "depinde de modificatorul private"
-      ],
-      "answer": 1,
-      "explain": "Cursul explică legarea dinamică: se execută metoda din clasa obiectului în instanțiere.",
-      "source": "fileciteturn1file5"
-    },
-    {
-      "id": "out_oop_course_1",
-      "type": "mcq",
-      "topic": "OOP",
-      "q": "Ce afișează programul?\n\nclass SuperClasa{\n  protected int a;\n  private int x;\n  public SuperClasa(){ a=2; x=calcul(); }\n  public int calcul(){ return 2*a; }\n  public String toString(){ return a + \", \" + x; }\n}\nclass SubClasa extends SuperClasa{\n  private int y;\n  public SubClasa(){ y=calcul(); }\n  public int calcul(){ return 3*a; }\n  public String toString(){ return super.toString() + \", \" + y; }\n}\nclass MainApp{\n  public static void main(String[] args){\n    SubClasa ob = new SubClasa();\n    System.out.println(ob);\n  }\n}",
-      "choices": [
-        "2, 4, 6",
-        "2, 6, 6",
-        "2, 6, 4",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "În constructorul bazei se apelează calcul() din SubClasa (legare dinamică): x=3*a=6; apoi y=6.",
-      "source": "fileciteturn1file5"
-    },
-    {
-      "id": "out_1",
-      "type": "mcq",
-      "topic": "Exceptions",
-      "q": "Ce afișează programul?\n\nclass T{\n  static int f(){\n    try{ return 1; }\n    finally{ return 2; }\n  }\n  public static void main(String[] args){\n    System.out.println(f());\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "Eroare",
-        "Nu afișează"
-      ],
-      "answer": 1,
-      "explain": "return din finally suprascrie return din try -> 2.",
-      "source": ""
-    },
-    {
-      "id": "out_2",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Map<String,Integer> m=new HashMap<>();\n    m.put(\"a\",1);\n    m.put(\"a\",2);\n    System.out.println(m.get(\"a\"));\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "null",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "Cheia 'a' e suprascrisă => 2.",
-      "source": ""
-    },
-    {
-      "id": "out_3",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(1); l.add(1); l.add(2);\n    System.out.println(l.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "List permite duplicate => size=3.",
-      "source": ""
-    },
-    {
-      "id": "out_4",
+      "id": "t128",
       "type": "mcq",
       "topic": "JDBC",
-      "q": "Ce afișează programul?\n\nimport java.sql.*;\nclass T{\n  public static void main(String[] args) throws SQLException{\n    String url=\"jdbc:mysql://localhost:3306/test\";\n    Connection c=DriverManager.getConnection(url,\"root\",\"root\");\n    Statement s=c.createStatement();\n    ResultSet rs=s.executeQuery(\"select 1\");\n    System.out.println(rs!=null);\n    rs.close(); s.close(); c.close();\n  }\n}",
+      "q": "Întrebare de teorie: Conexiunea JDBC se obține tipic prin:",
       "choices": [
-        "true",
-        "false",
-        "Eroare la compilare",
-        "Eroare la rulare întotdeauna"
+        "ResultSet.connect",
+        "Scanner.connect",
+        "DriverManager.getConnection",
+        "new Connection()"
       ],
-      "answer": 0,
-      "explain": "În mod normal executeQuery returnează un ResultSet (ne-null dacă interogarea a rulat).",
-      "source": "fileciteturn1file17"
+      "answer": 2,
+      "explain": "DriverManager.getConnection(...)"
     },
     {
-      "id": "out_5",
+      "id": "t129",
+      "type": "mcq",
+      "topic": "JDBC",
+      "q": "Selectează răspunsul: SELECT returnează:",
+      "choices": [
+        "ResultSet",
+        "void",
+        "boolean",
+        "int"
+      ],
+      "answer": 0,
+      "explain": "SELECT -> ResultSet"
+    },
+    {
+      "id": "t130",
+      "type": "mcq",
+      "topic": "JDBC",
+      "q": "Alege varianta corectă: Pachetele principale JDBC sunt:",
+      "choices": [
+        "java.jdbc, javax.jdbc",
+        "java.sql, javax.sql",
+        "java.net, javax.net",
+        "java.db, javax.db"
+      ],
+      "answer": 1,
+      "explain": "JDBC: java.sql și javax.sql."
+    },
+    {
+      "id": "t131",
+      "type": "tf",
+      "topic": "JDBC",
+      "q": "Care afirmație e corectă? PreparedStatement ajută la parametrizare și poate îmbunătăți performanța prin precompilare.",
+      "answer": true,
+      "explain": "PreparedStatement este precompilat și acceptă parametri."
+    },
+    {
+      "id": "t132",
+      "type": "tf",
+      "topic": "JDBC",
+      "q": "Alege varianta corectă: PreparedStatement ajută la parametrizare și poate îmbunătăți performanța prin precompilare.",
+      "answer": true,
+      "explain": "PreparedStatement este precompilat și acceptă parametri."
+    },
+    {
+      "id": "t133",
+      "type": "tf",
+      "topic": "JDBC",
+      "q": "Selectează răspunsul: PreparedStatement ajută la parametrizare și poate îmbunătăți performanța prin precompilare.",
+      "answer": true,
+      "explain": "PreparedStatement este precompilat și acceptă parametri."
+    },
+    {
+      "id": "t134",
+      "type": "tf",
+      "topic": "JDBC",
+      "q": "Întrebare de teorie: PreparedStatement ajută la parametrizare și poate îmbunătăți performanța prin precompilare.",
+      "answer": true,
+      "explain": "PreparedStatement este precompilat și acceptă parametri."
+    },
+    {
+      "id": "t135",
+      "type": "tf",
+      "topic": "JDBC",
+      "q": "Care afirmație e corectă? PreparedStatement ajută la parametrizare și poate îmbunătăți performanța prin precompilare.",
+      "answer": true,
+      "explain": "PreparedStatement este precompilat și acceptă parametri."
+    },
+    {
+      "id": "t136",
+      "type": "mcq",
+      "topic": "Spring Boot",
+      "q": "Alege varianta corectă: Spring Boot este:",
+      "choices": [
+        "un limbaj",
+        "o extensie/wrapper peste Spring pentru dezvoltare mai rapidă",
+        "un SGBD",
+        "un concurent al Spring"
+      ],
+      "answer": 1,
+      "explain": "Spring Boot simplifică dezvoltarea pe Spring."
+    },
+    {
+      "id": "t137",
+      "type": "mcq",
+      "topic": "Spring Boot",
+      "q": "Alege varianta corectă: @Autowired este folosit pentru:",
+      "choices": [
+        "serializare JSON",
+        "definire interfețe",
+        "injectare dependențe",
+        "tratare excepții"
+      ],
+      "answer": 2,
+      "explain": "Injectează un bean compatibil."
+    },
+    {
+      "id": "t138",
+      "type": "mcq",
+      "topic": "Spring Boot",
+      "q": "Care afirmație e corectă? @Component face ca Spring să:",
+      "choices": [
+        "creeze o tabelă",
+        "creeze un bean",
+        "oprească aplicația",
+        "arunce excepții"
+      ],
+      "answer": 1,
+      "explain": "@Component marchează o clasă ca bean."
+    },
+    {
+      "id": "t139",
+      "type": "mcq",
+      "topic": "Spring Boot",
+      "q": "Întrebare de teorie: Care sunt tipice pentru Spring Boot rapid dev?",
+      "choices": [
+        "pointeri și malloc",
+        "doar EJB",
+        "JSP-only",
+        "Starter Projects și Auto Configuration"
+      ],
+      "answer": 3,
+      "explain": "Starters + Auto Config sunt caracteristice."
+    },
+    {
+      "id": "t140",
+      "type": "mcq",
+      "topic": "Spring Boot",
+      "q": "Selectează răspunsul: Spring Boot este:",
+      "choices": [
+        "un concurent al Spring",
+        "un limbaj",
+        "o extensie/wrapper peste Spring pentru dezvoltare mai rapidă",
+        "un SGBD"
+      ],
+      "answer": 2,
+      "explain": "Spring Boot simplifică dezvoltarea pe Spring."
+    },
+    {
+      "id": "t141",
+      "type": "mcq",
+      "topic": "Spring Boot",
+      "q": "Alege varianta corectă: @Component face ca Spring să:",
+      "choices": [
+        "creeze o tabelă",
+        "oprească aplicația",
+        "creeze un bean",
+        "arunce excepții"
+      ],
+      "answer": 2,
+      "explain": "@Component marchează o clasă ca bean."
+    },
+    {
+      "id": "t142",
+      "type": "mcq",
+      "topic": "Spring Boot",
+      "q": "Alege varianta corectă: @Autowired este folosit pentru:",
+      "choices": [
+        "injectare dependențe",
+        "definire interfețe",
+        "tratare excepții",
+        "serializare JSON"
+      ],
+      "answer": 0,
+      "explain": "Injectează un bean compatibil."
+    },
+    {
+      "id": "t143",
+      "type": "mcq",
+      "topic": "Spring Boot",
+      "q": "Întrebare de teorie: @Autowired este folosit pentru:",
+      "choices": [
+        "injectare dependențe",
+        "tratare excepții",
+        "serializare JSON",
+        "definire interfețe"
+      ],
+      "answer": 0,
+      "explain": "Injectează un bean compatibil."
+    },
+    {
+      "id": "t144",
+      "type": "mcq",
+      "topic": "Spring Boot",
+      "q": "Selectează răspunsul: Spring Boot este:",
+      "choices": [
+        "un limbaj",
+        "o extensie/wrapper peste Spring pentru dezvoltare mai rapidă",
+        "un concurent al Spring",
+        "un SGBD"
+      ],
+      "answer": 1,
+      "explain": "Spring Boot simplifică dezvoltarea pe Spring."
+    },
+    {
+      "id": "t145",
+      "type": "mcq",
+      "topic": "Spring Boot",
+      "q": "Întrebare de teorie: Spring Boot este:",
+      "choices": [
+        "un SGBD",
+        "o extensie/wrapper peste Spring pentru dezvoltare mai rapidă",
+        "un concurent al Spring",
+        "un limbaj"
+      ],
+      "answer": 1,
+      "explain": "Spring Boot simplifică dezvoltarea pe Spring."
+    },
+    {
+      "id": "t146",
+      "type": "tf",
+      "topic": "Spring Boot",
+      "q": "Care afirmație e corectă? IoC în Spring înseamnă că containerul gestionează crearea și injectarea dependențelor.",
+      "answer": true,
+      "explain": "Containerul Spring gestionează ciclul de viață și dependențele."
+    },
+    {
+      "id": "t147",
+      "type": "tf",
+      "topic": "Spring Boot",
+      "q": "Selectează răspunsul: IoC în Spring înseamnă că containerul gestionează crearea și injectarea dependențelor.",
+      "answer": true,
+      "explain": "Containerul Spring gestionează ciclul de viață și dependențele."
+    },
+    {
+      "id": "t148",
+      "type": "tf",
+      "topic": "Spring Boot",
+      "q": "Alege varianta corectă: IoC în Spring înseamnă că containerul gestionează crearea și injectarea dependențelor.",
+      "answer": true,
+      "explain": "Containerul Spring gestionează ciclul de viață și dependențele."
+    },
+    {
+      "id": "t149",
+      "type": "tf",
+      "topic": "Spring Boot",
+      "q": "Întrebare de teorie: IoC în Spring înseamnă că containerul gestionează crearea și injectarea dependențelor.",
+      "answer": true,
+      "explain": "Containerul Spring gestionează ciclul de viață și dependențele."
+    },
+    {
+      "id": "t150",
+      "type": "tf",
+      "topic": "Spring Boot",
+      "q": "Selectează răspunsul: IoC în Spring înseamnă că containerul gestionează crearea și injectarea dependențelor.",
+      "answer": true,
+      "explain": "Containerul Spring gestionează ciclul de viață și dependențele."
+    },
+    {
+      "id": "c1",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Ce afișează programul?\n\nclass Test{\n  int x = 5;\n  void metoda(int x){ x -= 2; }\n  public static void main(String[] args){\n    Test t = new Test();\n    t.metoda(99);\n    System.out.println(t.x);\n  }\n}",
+      "choices": [
+        "5",
+        "3",
+        "97",
+        "Eroare"
+      ],
+      "answer": 0,
+      "explain": "Parametrul umbrește atributul; fără this.x, atributul rămâne neschimbat."
+    },
+    {
+      "id": "c2",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Ce afișează programul?\n\nclass Test{\n  int x = 7;\n  void metoda(int x){ x -= 2; }\n  public static void main(String[] args){\n    Test t = new Test();\n    t.metoda(99);\n    System.out.println(t.x);\n  }\n}",
+      "choices": [
+        "7",
+        "5",
+        "97",
+        "Eroare"
+      ],
+      "answer": 0,
+      "explain": "Parametrul umbrește atributul; fără this.x, atributul rămâne neschimbat."
+    },
+    {
+      "id": "c3",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Ce afișează programul?\n\nclass Test{\n  int x = 10;\n  void metoda(int x){ x -= 2; }\n  public static void main(String[] args){\n    Test t = new Test();\n    t.metoda(99);\n    System.out.println(t.x);\n  }\n}",
+      "choices": [
+        "10",
+        "8",
+        "97",
+        "Eroare"
+      ],
+      "answer": 0,
+      "explain": "Parametrul umbrește atributul; fără this.x, atributul rămâne neschimbat."
+    },
+    {
+      "id": "c4",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Ce afișează programul?\n\nclass Test{\n  int x = 3;\n  void metoda(int x){ x -= 2; }\n  public static void main(String[] args){\n    Test t = new Test();\n    t.metoda(99);\n    System.out.println(t.x);\n  }\n}",
+      "choices": [
+        "3",
+        "1",
+        "97",
+        "Eroare"
+      ],
+      "answer": 0,
+      "explain": "Parametrul umbrește atributul; fără this.x, atributul rămâne neschimbat."
+    },
+    {
+      "id": "c5",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Ce afișează programul?\n\nclass Test{\n  int x = 5;\n  void metoda(){ this.x -= 4; }\n  public static void main(String[] args){\n    Test t = new Test();\n    t.metoda();\n    System.out.println(t.x);\n  }\n}",
+      "choices": [
+        "5",
+        "1",
+        "9",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "this.x este modificat: x = x - 4."
+    },
+    {
+      "id": "c6",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Ce afișează programul?\n\nclass Test{\n  int x = 7;\n  void metoda(){ this.x -= 4; }\n  public static void main(String[] args){\n    Test t = new Test();\n    t.metoda();\n    System.out.println(t.x);\n  }\n}",
+      "choices": [
+        "7",
+        "3",
+        "11",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "this.x este modificat: x = x - 4."
+    },
+    {
+      "id": "c7",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Ce afișează programul?\n\nclass Test{\n  int x = 10;\n  void metoda(){ this.x -= 4; }\n  public static void main(String[] args){\n    Test t = new Test();\n    t.metoda();\n    System.out.println(t.x);\n  }\n}",
+      "choices": [
+        "10",
+        "6",
+        "14",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "this.x este modificat: x = x - 4."
+    },
+    {
+      "id": "c8",
+      "type": "mcq",
+      "topic": "Java basics",
+      "q": "Ce afișează programul?\n\nclass Test{\n  int x = 3;\n  void metoda(){ this.x -= 4; }\n  public static void main(String[] args){\n    Test t = new Test();\n    t.metoda();\n    System.out.println(t.x);\n  }\n}",
+      "choices": [
+        "3",
+        "-1",
+        "7",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "this.x este modificat: x = x - 4."
+    },
+    {
+      "id": "c9",
+      "type": "mcq",
+      "topic": "Static",
+      "q": "Ce afișează programul?\n\nclass T{\n  static int x=0;\n  void m(){ x+=5; }\n  public static void main(String[] args){\n    T a=new T(); T b=new T();\n    a.m(); b.m();\n    System.out.println(T.x);\n  }\n}",
+      "choices": [
+        "0",
+        "5",
+        "10",
+        "Eroare"
+      ],
+      "answer": 2,
+      "explain": "x este static și comun: +5 de două ori."
+    },
+    {
+      "id": "c10",
+      "type": "mcq",
+      "topic": "Static",
+      "q": "Ce afișează programul?\n\nclass T{\n  static int x=1;\n  void m(){ x+=5; }\n  public static void main(String[] args){\n    T a=new T(); T b=new T();\n    a.m(); b.m();\n    System.out.println(T.x);\n  }\n}",
+      "choices": [
+        "1",
+        "6",
+        "11",
+        "Eroare"
+      ],
+      "answer": 2,
+      "explain": "x este static și comun: +5 de două ori."
+    },
+    {
+      "id": "c11",
+      "type": "mcq",
+      "topic": "Static",
+      "q": "Ce afișează programul?\n\nclass T{\n  static int x=5;\n  void m(){ x+=5; }\n  public static void main(String[] args){\n    T a=new T(); T b=new T();\n    a.m(); b.m();\n    System.out.println(T.x);\n  }\n}",
+      "choices": [
+        "5",
+        "10",
+        "15",
+        "Eroare"
+      ],
+      "answer": 2,
+      "explain": "x este static și comun: +5 de două ori."
+    },
+    {
+      "id": "c12",
       "type": "mcq",
       "topic": "OOP",
       "q": "Ce afișează programul?\n\nclass A{ int f(){ return 1; } }\nclass B extends A{ int f(){ return 2; } }\nclass T{\n  public static void main(String[] args){\n    A ob = new B();\n    System.out.println(ob.f());\n  }\n}",
@@ -209,89 +1973,83 @@
         "0"
       ],
       "answer": 1,
-      "explain": "Polimorfism: se apelează B.f() -> 2.",
-      "source": "fileciteturn1file6"
+      "explain": "Polimorfism: se apelează metoda suprascrisă din B."
     },
     {
-      "id": "out_6",
+      "id": "c13",
       "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(1); l.add(1); l.add(2);\n    System.out.println(l.size());\n  }\n}",
+      "topic": "OOP",
+      "q": "Ce afișează programul?\n\nclass A{ int f(){ return 10; } }\nclass B extends A{ int f(){ return 20; } }\nclass T{\n  public static void main(String[] args){\n    A ob = new B();\n    System.out.println(ob.f());\n  }\n}",
       "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "List permite duplicate => size=3.",
-      "source": ""
-    },
-    {
-      "id": "out_7",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(1); s.add(1); s.add(2);\n    System.out.println(s.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 0,
-      "explain": "Set nu permite duplicate => {1,2} size=2.",
-      "source": ""
-    },
-    {
-      "id": "out_8",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(1); l.add(1); l.add(2);\n    System.out.println(l.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "List permite duplicate => size=3.",
-      "source": ""
-    },
-    {
-      "id": "out_9",
-      "type": "mcq",
-      "topic": "Java basics",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    String a=\"Java\";\n    a += \" \" + 17;\n    System.out.println(a);\n  }\n}",
-      "choices": [
-        "Java17",
-        "Java 17",
+        "10",
+        "20",
         "Eroare",
-        "17 Java"
+        "0"
       ],
       "answer": 1,
-      "explain": "Concatenarea cu String produce \"Java 17\".",
-      "source": ""
+      "explain": "Polimorfism: se apelează metoda suprascrisă din B."
     },
     {
-      "id": "out_10",
+      "id": "c14",
       "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(1); s.add(1); s.add(2);\n    System.out.println(s.size());\n  }\n}",
+      "topic": "OOP",
+      "q": "Ce afișează programul?\n\nclass A{ int f(){ return 0; } }\nclass B extends A{ int f(){ return 7; } }\nclass T{\n  public static void main(String[] args){\n    A ob = new B();\n    System.out.println(ob.f());\n  }\n}",
       "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
+        "0",
+        "7",
+        "Eroare",
+        "0"
       ],
-      "answer": 0,
-      "explain": "Set nu permite duplicate => {1,2} size=2.",
-      "source": ""
+      "answer": 1,
+      "explain": "Polimorfism: se apelează metoda suprascrisă din B."
     },
     {
-      "id": "out_11",
+      "id": "c15",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Ce afișează programul?\n\nclass A{\n  int x=1;\n  A(){ x = f(); }\n  int f(){ return 2; }\n}\nclass B extends A{\n  int y=3;\n  int f(){ return x + y; }\n}\nclass T{\n  public static void main(String[] args){\n    B b = new B();\n    System.out.println(b.x);\n  }\n}",
+      "choices": [
+        "0",
+        "1",
+        "4",
+        "2"
+      ],
+      "answer": 1,
+      "explain": "În A(): se apelează B.f(); y încă e 0, deci x+y = x."
+    },
+    {
+      "id": "c16",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Ce afișează programul?\n\nclass A{\n  int x=2;\n  A(){ x = f(); }\n  int f(){ return 2; }\n}\nclass B extends A{\n  int y=3;\n  int f(){ return x + y; }\n}\nclass T{\n  public static void main(String[] args){\n    B b = new B();\n    System.out.println(b.x);\n  }\n}",
+      "choices": [
+        "0",
+        "2",
+        "5",
+        "2"
+      ],
+      "answer": 1,
+      "explain": "În A(): se apelează B.f(); y încă e 0, deci x+y = x."
+    },
+    {
+      "id": "c17",
+      "type": "mcq",
+      "topic": "OOP",
+      "q": "Ce afișează programul?\n\nclass A{\n  int x=3;\n  A(){ x = f(); }\n  int f(){ return 2; }\n}\nclass B extends A{\n  int y=3;\n  int f(){ return x + y; }\n}\nclass T{\n  public static void main(String[] args){\n    B b = new B();\n    System.out.println(b.x);\n  }\n}",
+      "choices": [
+        "0",
+        "3",
+        "6",
+        "2"
+      ],
+      "answer": 1,
+      "explain": "În A(): se apelează B.f(); y încă e 0, deci x+y = x."
+    },
+    {
+      "id": "c18",
       "type": "mcq",
       "topic": "Exceptions",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    try{\n      int a=1/0;\n      System.out.print(\"A\");\n    }catch(ArithmeticException e){\n      System.out.print(\"B\");\n    }finally{\n      System.out.print(\"C\");\n    }\n  }\n}",
+      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    try{\n      int a = 1/0;\n      System.out.print(\"A\");\n    }catch(ArithmeticException e){\n      System.out.print(\"B\");\n    }finally{\n      System.out.print(\"C\");\n    }\n  }\n}",
       "choices": [
         "AC",
         "BC",
@@ -299,116 +2057,10 @@
         "B"
       ],
       "answer": 1,
-      "explain": "1/0 aruncă -> catch(B) și finally(C) => BC.",
-      "source": ""
+      "explain": "1/0 aruncă -> catch(B) + finally(C) => BC."
     },
     {
-      "id": "out_12",
-      "type": "mcq",
-      "topic": "OOP",
-      "q": "Ce afișează programul?\n\nclass A{ int f(){ return 1; } }\nclass B extends A{ int f(){ return 2; } }\nclass T{\n  public static void main(String[] args){\n    A ob = new B();\n    System.out.println(ob.f());\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "Eroare",
-        "0"
-      ],
-      "answer": 1,
-      "explain": "Polimorfism: se apelează B.f() -> 2.",
-      "source": "fileciteturn1file6"
-    },
-    {
-      "id": "out_13",
-      "type": "mcq",
-      "topic": "Java basics",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    String a=\"Java\";\n    a += \" \" + 17;\n    System.out.println(a);\n  }\n}",
-      "choices": [
-        "Java17",
-        "Java 17",
-        "Eroare",
-        "17 Java"
-      ],
-      "answer": 1,
-      "explain": "Concatenarea cu String produce \"Java 17\".",
-      "source": ""
-    },
-    {
-      "id": "out_14",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(1); s.add(1); s.add(2);\n    System.out.println(s.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 0,
-      "explain": "Set nu permite duplicate => {1,2} size=2.",
-      "source": ""
-    },
-    {
-      "id": "out_15",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(1); s.add(1); s.add(2);\n    System.out.println(s.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 0,
-      "explain": "Set nu permite duplicate => {1,2} size=2.",
-      "source": ""
-    },
-    {
-      "id": "out_16",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(1); s.add(1); s.add(2);\n    System.out.println(s.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 0,
-      "explain": "Set nu permite duplicate => {1,2} size=2.",
-      "source": ""
-    },
-    {
-      "id": "out_17",
-      "type": "mcq",
-      "topic": "JDBC",
-      "q": "Ce afișează programul?\n\nimport java.sql.*;\nclass T{\n  public static void main(String[] args) throws SQLException{\n    String url=\"jdbc:mysql://localhost:3306/test\";\n    Connection c=DriverManager.getConnection(url,\"root\",\"root\");\n    Statement s=c.createStatement();\n    ResultSet rs=s.executeQuery(\"select 1\");\n    System.out.println(rs!=null);\n    rs.close(); s.close(); c.close();\n  }\n}",
-      "choices": [
-        "true",
-        "false",
-        "Eroare la compilare",
-        "Eroare la rulare întotdeauna"
-      ],
-      "answer": 0,
-      "explain": "În mod normal executeQuery returnează un ResultSet (ne-null dacă interogarea a rulat).",
-      "source": "fileciteturn1file17"
-    },
-    {
-      "id": "out_18",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(1); s.add(1); s.add(2);\n    System.out.println(s.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 0,
-      "explain": "Set nu permite duplicate => {1,2} size=2.",
-      "source": ""
-    },
-    {
-      "id": "out_19",
+      "id": "c19",
       "type": "mcq",
       "topic": "Exceptions",
       "q": "Ce afișează programul?\n\nclass T{\n  static int f(){\n    try{ return 1; }\n    finally{ return 2; }\n  }\n  public static void main(String[] args){\n    System.out.println(f());\n  }\n}",
@@ -416,137 +2068,16 @@
         "1",
         "2",
         "Eroare",
-        "Nu afișează"
+        "nimic"
       ],
       "answer": 1,
-      "explain": "return din finally suprascrie return din try -> 2.",
-      "source": ""
+      "explain": "return din finally suprascrie return din try."
     },
     {
-      "id": "out_20",
+      "id": "c20",
       "type": "mcq",
       "topic": "Exceptions",
-      "q": "Ce afișează programul?\n\nclass T{\n  static int f(){\n    try{ return 1; }\n    finally{ return 2; }\n  }\n  public static void main(String[] args){\n    System.out.println(f());\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "Eroare",
-        "Nu afișează"
-      ],
-      "answer": 1,
-      "explain": "return din finally suprascrie return din try -> 2.",
-      "source": ""
-    },
-    {
-      "id": "out_21",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Map<String,Integer> m=new HashMap<>();\n    m.put(\"a\",1);\n    m.put(\"a\",2);\n    System.out.println(m.get(\"a\"));\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "null",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "Cheia 'a' e suprascrisă => 2.",
-      "source": ""
-    },
-    {
-      "id": "out_22",
-      "type": "mcq",
-      "topic": "Java basics",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    int s=0;\n    for(int i=1;i<=3;i++) s+=i;\n    System.out.println(s);\n  }\n}",
-      "choices": [
-        "3",
-        "6",
-        "0",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "1+2+3=6.",
-      "source": ""
-    },
-    {
-      "id": "out_23",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Map<String,Integer> m=new HashMap<>();\n    m.put(\"a\",1);\n    m.put(\"a\",2);\n    System.out.println(m.get(\"a\"));\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "null",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "Cheia 'a' e suprascrisă => 2.",
-      "source": ""
-    },
-    {
-      "id": "out_24",
-      "type": "mcq",
-      "topic": "OOP",
-      "q": "Ce afișează programul?\n\nclass A{ int f(){ return 1; } }\nclass B extends A{ int f(){ return 2; } }\nclass T{\n  public static void main(String[] args){\n    A ob = new B();\n    System.out.println(ob.f());\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "Eroare",
-        "0"
-      ],
-      "answer": 1,
-      "explain": "Polimorfism: se apelează B.f() -> 2.",
-      "source": "fileciteturn1file6"
-    },
-    {
-      "id": "out_25",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(1); s.add(1); s.add(2);\n    System.out.println(s.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 0,
-      "explain": "Set nu permite duplicate => {1,2} size=2.",
-      "source": ""
-    },
-    {
-      "id": "out_26",
-      "type": "mcq",
-      "topic": "Static",
-      "q": "Ce afișează programul?\n\nclass T{\n  static int x=1;\n  T(){ x++; }\n  public static void main(String[] args){\n    new T(); new T();\n    System.out.println(T.x);\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "3",
-        "Eroare"
-      ],
-      "answer": 2,
-      "explain": "x e static: pornește 1, apoi două construcții -> 3.",
-      "source": ""
-    },
-    {
-      "id": "out_27",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(1); l.add(1); l.add(2);\n    System.out.println(l.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "List permite duplicate => size=3.",
-      "source": ""
-    },
-    {
-      "id": "out_28",
-      "type": "mcq",
-      "topic": "Exceptions",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    try{\n      int a=1/0;\n      System.out.print(\"A\");\n    }catch(ArithmeticException e){\n      System.out.print(\"B\");\n    }finally{\n      System.out.print(\"C\");\n    }\n  }\n}",
+      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    try{\n      int a = 1/0;\n      System.out.print(\"A\");\n    }catch(ArithmeticException e){\n      System.out.print(\"B\");\n    }finally{\n      System.out.print(\"C\");\n    }\n  }\n}",
       "choices": [
         "AC",
         "BC",
@@ -554,11 +2085,10 @@
         "B"
       ],
       "answer": 1,
-      "explain": "1/0 aruncă -> catch(B) și finally(C) => BC.",
-      "source": ""
+      "explain": "1/0 aruncă -> catch(B) + finally(C) => BC."
     },
     {
-      "id": "out_29",
+      "id": "c21",
       "type": "mcq",
       "topic": "Exceptions",
       "q": "Ce afișează programul?\n\nclass T{\n  static int f(){\n    try{ return 1; }\n    finally{ return 2; }\n  }\n  public static void main(String[] args){\n    System.out.println(f());\n  }\n}",
@@ -566,92 +2096,16 @@
         "1",
         "2",
         "Eroare",
-        "Nu afișează"
+        "nimic"
       ],
       "answer": 1,
-      "explain": "return din finally suprascrie return din try -> 2.",
-      "source": ""
+      "explain": "return din finally suprascrie return din try."
     },
     {
-      "id": "out_30",
-      "type": "mcq",
-      "topic": "JDBC",
-      "q": "Ce afișează programul?\n\nimport java.sql.*;\nclass T{\n  public static void main(String[] args) throws SQLException{\n    String url=\"jdbc:mysql://localhost:3306/test\";\n    Connection c=DriverManager.getConnection(url,\"root\",\"root\");\n    Statement s=c.createStatement();\n    ResultSet rs=s.executeQuery(\"select 1\");\n    System.out.println(rs!=null);\n    rs.close(); s.close(); c.close();\n  }\n}",
-      "choices": [
-        "true",
-        "false",
-        "Eroare la compilare",
-        "Eroare la rulare întotdeauna"
-      ],
-      "answer": 0,
-      "explain": "În mod normal executeQuery returnează un ResultSet (ne-null dacă interogarea a rulat).",
-      "source": "fileciteturn1file17"
-    },
-    {
-      "id": "out_31",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(1); l.add(1); l.add(2);\n    System.out.println(l.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "List permite duplicate => size=3.",
-      "source": ""
-    },
-    {
-      "id": "out_32",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(1); s.add(1); s.add(2);\n    System.out.println(s.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 0,
-      "explain": "Set nu permite duplicate => {1,2} size=2.",
-      "source": ""
-    },
-    {
-      "id": "out_33",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Map<String,Integer> m=new HashMap<>();\n    m.put(\"a\",1);\n    m.put(\"a\",2);\n    System.out.println(m.get(\"a\"));\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "null",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "Cheia 'a' e suprascrisă => 2.",
-      "source": ""
-    },
-    {
-      "id": "out_34",
+      "id": "c22",
       "type": "mcq",
       "topic": "Exceptions",
-      "q": "Ce afișează programul?\n\nclass T{\n  static int f(){\n    try{ return 1; }\n    finally{ return 2; }\n  }\n  public static void main(String[] args){\n    System.out.println(f());\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "Eroare",
-        "Nu afișează"
-      ],
-      "answer": 1,
-      "explain": "return din finally suprascrie return din try -> 2.",
-      "source": ""
-    },
-    {
-      "id": "out_35",
-      "type": "mcq",
-      "topic": "Exceptions",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    try{\n      int a=1/0;\n      System.out.print(\"A\");\n    }catch(ArithmeticException e){\n      System.out.print(\"B\");\n    }finally{\n      System.out.print(\"C\");\n    }\n  }\n}",
+      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    try{\n      int a = 1/0;\n      System.out.print(\"A\");\n    }catch(ArithmeticException e){\n      System.out.print(\"B\");\n    }finally{\n      System.out.print(\"C\");\n    }\n  }\n}",
       "choices": [
         "AC",
         "BC",
@@ -659,191 +2113,10 @@
         "B"
       ],
       "answer": 1,
-      "explain": "1/0 aruncă -> catch(B) și finally(C) => BC.",
-      "source": ""
+      "explain": "1/0 aruncă -> catch(B) + finally(C) => BC."
     },
     {
-      "id": "out_36",
-      "type": "mcq",
-      "topic": "Java basics",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    String a=\"Java\";\n    a += \" \" + 17;\n    System.out.println(a);\n  }\n}",
-      "choices": [
-        "Java17",
-        "Java 17",
-        "Eroare",
-        "17 Java"
-      ],
-      "answer": 1,
-      "explain": "Concatenarea cu String produce \"Java 17\".",
-      "source": ""
-    },
-    {
-      "id": "out_37",
-      "type": "mcq",
-      "topic": "Java basics",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    String a=\"Java\";\n    a += \" \" + 17;\n    System.out.println(a);\n  }\n}",
-      "choices": [
-        "Java17",
-        "Java 17",
-        "Eroare",
-        "17 Java"
-      ],
-      "answer": 1,
-      "explain": "Concatenarea cu String produce \"Java 17\".",
-      "source": ""
-    },
-    {
-      "id": "out_38",
-      "type": "mcq",
-      "topic": "JDBC",
-      "q": "Ce afișează programul?\n\nimport java.sql.*;\nclass T{\n  public static void main(String[] args) throws SQLException{\n    String url=\"jdbc:mysql://localhost:3306/test\";\n    Connection c=DriverManager.getConnection(url,\"root\",\"root\");\n    Statement s=c.createStatement();\n    ResultSet rs=s.executeQuery(\"select 1\");\n    System.out.println(rs!=null);\n    rs.close(); s.close(); c.close();\n  }\n}",
-      "choices": [
-        "true",
-        "false",
-        "Eroare la compilare",
-        "Eroare la rulare întotdeauna"
-      ],
-      "answer": 0,
-      "explain": "În mod normal executeQuery returnează un ResultSet (ne-null dacă interogarea a rulat).",
-      "source": "fileciteturn1file17"
-    },
-    {
-      "id": "out_39",
-      "type": "mcq",
-      "topic": "Java basics",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    String a=\"Java\";\n    a += \" \" + 17;\n    System.out.println(a);\n  }\n}",
-      "choices": [
-        "Java17",
-        "Java 17",
-        "Eroare",
-        "17 Java"
-      ],
-      "answer": 1,
-      "explain": "Concatenarea cu String produce \"Java 17\".",
-      "source": ""
-    },
-    {
-      "id": "out_40",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(1); l.add(1); l.add(2);\n    System.out.println(l.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "List permite duplicate => size=3.",
-      "source": ""
-    },
-    {
-      "id": "out_41",
-      "type": "mcq",
-      "topic": "Static",
-      "q": "Ce afișează programul?\n\nclass T{\n  static int x=1;\n  T(){ x++; }\n  public static void main(String[] args){\n    new T(); new T();\n    System.out.println(T.x);\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "3",
-        "Eroare"
-      ],
-      "answer": 2,
-      "explain": "x e static: pornește 1, apoi două construcții -> 3.",
-      "source": ""
-    },
-    {
-      "id": "out_42",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(1); s.add(1); s.add(2);\n    System.out.println(s.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 0,
-      "explain": "Set nu permite duplicate => {1,2} size=2.",
-      "source": ""
-    },
-    {
-      "id": "out_43",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Map<String,Integer> m=new HashMap<>();\n    m.put(\"a\",1);\n    m.put(\"a\",2);\n    System.out.println(m.get(\"a\"));\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "null",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "Cheia 'a' e suprascrisă => 2.",
-      "source": ""
-    },
-    {
-      "id": "out_44",
-      "type": "mcq",
-      "topic": "Java basics",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    int s=0;\n    for(int i=1;i<=3;i++) s+=i;\n    System.out.println(s);\n  }\n}",
-      "choices": [
-        "3",
-        "6",
-        "0",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "1+2+3=6.",
-      "source": ""
-    },
-    {
-      "id": "out_45",
-      "type": "mcq",
-      "topic": "OOP",
-      "q": "Ce afișează programul?\n\nclass A{ int f(){ return 1; } }\nclass B extends A{ int f(){ return 2; } }\nclass T{\n  public static void main(String[] args){\n    A ob = new B();\n    System.out.println(ob.f());\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "Eroare",
-        "0"
-      ],
-      "answer": 1,
-      "explain": "Polimorfism: se apelează B.f() -> 2.",
-      "source": "fileciteturn1file6"
-    },
-    {
-      "id": "out_46",
-      "type": "mcq",
-      "topic": "Java basics",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    String a=\"Java\";\n    a += \" \" + 17;\n    System.out.println(a);\n  }\n}",
-      "choices": [
-        "Java17",
-        "Java 17",
-        "Eroare",
-        "17 Java"
-      ],
-      "answer": 1,
-      "explain": "Concatenarea cu String produce \"Java 17\".",
-      "source": ""
-    },
-    {
-      "id": "out_47",
-      "type": "mcq",
-      "topic": "JDBC",
-      "q": "Ce afișează programul?\n\nimport java.sql.*;\nclass T{\n  public static void main(String[] args) throws SQLException{\n    String url=\"jdbc:mysql://localhost:3306/test\";\n    Connection c=DriverManager.getConnection(url,\"root\",\"root\");\n    Statement s=c.createStatement();\n    ResultSet rs=s.executeQuery(\"select 1\");\n    System.out.println(rs!=null);\n    rs.close(); s.close(); c.close();\n  }\n}",
-      "choices": [
-        "true",
-        "false",
-        "Eroare la compilare",
-        "Eroare la rulare întotdeauna"
-      ],
-      "answer": 0,
-      "explain": "În mod normal executeQuery returnează un ResultSet (ne-null dacă interogarea a rulat).",
-      "source": "fileciteturn1file17"
-    },
-    {
-      "id": "out_48",
+      "id": "c23",
       "type": "mcq",
       "topic": "Exceptions",
       "q": "Ce afișează programul?\n\nclass T{\n  static int f(){\n    try{ return 1; }\n    finally{ return 2; }\n  }\n  public static void main(String[] args){\n    System.out.println(f());\n  }\n}",
@@ -851,497 +2124,16 @@
         "1",
         "2",
         "Eroare",
-        "Nu afișează"
+        "nimic"
       ],
       "answer": 1,
-      "explain": "return din finally suprascrie return din try -> 2.",
-      "source": ""
+      "explain": "return din finally suprascrie return din try."
     },
     {
-      "id": "out_49",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Map<String,Integer> m=new HashMap<>();\n    m.put(\"a\",1);\n    m.put(\"a\",2);\n    System.out.println(m.get(\"a\"));\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "null",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "Cheia 'a' e suprascrisă => 2.",
-      "source": ""
-    },
-    {
-      "id": "out_50",
+      "id": "c24",
       "type": "mcq",
       "topic": "Exceptions",
-      "q": "Ce afișează programul?\n\nclass T{\n  static int f(){\n    try{ return 1; }\n    finally{ return 2; }\n  }\n  public static void main(String[] args){\n    System.out.println(f());\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "Eroare",
-        "Nu afișează"
-      ],
-      "answer": 1,
-      "explain": "return din finally suprascrie return din try -> 2.",
-      "source": ""
-    },
-    {
-      "id": "out_51",
-      "type": "mcq",
-      "topic": "OOP",
-      "q": "Ce afișează programul?\n\nclass A{ int f(){ return 1; } }\nclass B extends A{ int f(){ return 2; } }\nclass T{\n  public static void main(String[] args){\n    A ob = new B();\n    System.out.println(ob.f());\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "Eroare",
-        "0"
-      ],
-      "answer": 1,
-      "explain": "Polimorfism: se apelează B.f() -> 2.",
-      "source": "fileciteturn1file6"
-    },
-    {
-      "id": "out_52",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(1); l.add(1); l.add(2);\n    System.out.println(l.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "List permite duplicate => size=3.",
-      "source": ""
-    },
-    {
-      "id": "out_53",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Map<String,Integer> m=new HashMap<>();\n    m.put(\"a\",1);\n    m.put(\"a\",2);\n    System.out.println(m.get(\"a\"));\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "null",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "Cheia 'a' e suprascrisă => 2.",
-      "source": ""
-    },
-    {
-      "id": "out_54",
-      "type": "mcq",
-      "topic": "Java basics",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    int s=0;\n    for(int i=1;i<=3;i++) s+=i;\n    System.out.println(s);\n  }\n}",
-      "choices": [
-        "3",
-        "6",
-        "0",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "1+2+3=6.",
-      "source": ""
-    },
-    {
-      "id": "out_55",
-      "type": "mcq",
-      "topic": "Java basics",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    String a=\"Java\";\n    a += \" \" + 17;\n    System.out.println(a);\n  }\n}",
-      "choices": [
-        "Java17",
-        "Java 17",
-        "Eroare",
-        "17 Java"
-      ],
-      "answer": 1,
-      "explain": "Concatenarea cu String produce \"Java 17\".",
-      "source": ""
-    },
-    {
-      "id": "out_56",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(1); s.add(1); s.add(2);\n    System.out.println(s.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 0,
-      "explain": "Set nu permite duplicate => {1,2} size=2.",
-      "source": ""
-    },
-    {
-      "id": "out_57",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(1); s.add(1); s.add(2);\n    System.out.println(s.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 0,
-      "explain": "Set nu permite duplicate => {1,2} size=2.",
-      "source": ""
-    },
-    {
-      "id": "out_58",
-      "type": "mcq",
-      "topic": "OOP",
-      "q": "Ce afișează programul?\n\nclass A{ int f(){ return 1; } }\nclass B extends A{ int f(){ return 2; } }\nclass T{\n  public static void main(String[] args){\n    A ob = new B();\n    System.out.println(ob.f());\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "Eroare",
-        "0"
-      ],
-      "answer": 1,
-      "explain": "Polimorfism: se apelează B.f() -> 2.",
-      "source": "fileciteturn1file6"
-    },
-    {
-      "id": "out_59",
-      "type": "mcq",
-      "topic": "Static",
-      "q": "Ce afișează programul?\n\nclass T{\n  static int x=1;\n  T(){ x++; }\n  public static void main(String[] args){\n    new T(); new T();\n    System.out.println(T.x);\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "3",
-        "Eroare"
-      ],
-      "answer": 2,
-      "explain": "x e static: pornește 1, apoi două construcții -> 3.",
-      "source": ""
-    },
-    {
-      "id": "out_60",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(1); l.add(1); l.add(2);\n    System.out.println(l.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "List permite duplicate => size=3.",
-      "source": ""
-    },
-    {
-      "id": "out_61",
-      "type": "mcq",
-      "topic": "Static",
-      "q": "Ce afișează programul?\n\nclass T{\n  static int x=1;\n  T(){ x++; }\n  public static void main(String[] args){\n    new T(); new T();\n    System.out.println(T.x);\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "3",
-        "Eroare"
-      ],
-      "answer": 2,
-      "explain": "x e static: pornește 1, apoi două construcții -> 3.",
-      "source": ""
-    },
-    {
-      "id": "out_62",
-      "type": "mcq",
-      "topic": "OOP",
-      "q": "Ce afișează programul?\n\nclass A{ int f(){ return 1; } }\nclass B extends A{ int f(){ return 2; } }\nclass T{\n  public static void main(String[] args){\n    A ob = new B();\n    System.out.println(ob.f());\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "Eroare",
-        "0"
-      ],
-      "answer": 1,
-      "explain": "Polimorfism: se apelează B.f() -> 2.",
-      "source": "fileciteturn1file6"
-    },
-    {
-      "id": "out_63",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Map<String,Integer> m=new HashMap<>();\n    m.put(\"a\",1);\n    m.put(\"a\",2);\n    System.out.println(m.get(\"a\"));\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "null",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "Cheia 'a' e suprascrisă => 2.",
-      "source": ""
-    },
-    {
-      "id": "out_64",
-      "type": "mcq",
-      "topic": "JDBC",
-      "q": "Ce afișează programul?\n\nimport java.sql.*;\nclass T{\n  public static void main(String[] args) throws SQLException{\n    String url=\"jdbc:mysql://localhost:3306/test\";\n    Connection c=DriverManager.getConnection(url,\"root\",\"root\");\n    Statement s=c.createStatement();\n    ResultSet rs=s.executeQuery(\"select 1\");\n    System.out.println(rs!=null);\n    rs.close(); s.close(); c.close();\n  }\n}",
-      "choices": [
-        "true",
-        "false",
-        "Eroare la compilare",
-        "Eroare la rulare întotdeauna"
-      ],
-      "answer": 0,
-      "explain": "În mod normal executeQuery returnează un ResultSet (ne-null dacă interogarea a rulat).",
-      "source": "fileciteturn1file17"
-    },
-    {
-      "id": "out_65",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(1); l.add(1); l.add(2);\n    System.out.println(l.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "List permite duplicate => size=3.",
-      "source": ""
-    },
-    {
-      "id": "out_66",
-      "type": "mcq",
-      "topic": "Static",
-      "q": "Ce afișează programul?\n\nclass T{\n  static int x=1;\n  T(){ x++; }\n  public static void main(String[] args){\n    new T(); new T();\n    System.out.println(T.x);\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "3",
-        "Eroare"
-      ],
-      "answer": 2,
-      "explain": "x e static: pornește 1, apoi două construcții -> 3.",
-      "source": ""
-    },
-    {
-      "id": "out_67",
-      "type": "mcq",
-      "topic": "Java basics",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    int s=0;\n    for(int i=1;i<=3;i++) s+=i;\n    System.out.println(s);\n  }\n}",
-      "choices": [
-        "3",
-        "6",
-        "0",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "1+2+3=6.",
-      "source": ""
-    },
-    {
-      "id": "out_68",
-      "type": "mcq",
-      "topic": "Static",
-      "q": "Ce afișează programul?\n\nclass T{\n  static int x=1;\n  T(){ x++; }\n  public static void main(String[] args){\n    new T(); new T();\n    System.out.println(T.x);\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "3",
-        "Eroare"
-      ],
-      "answer": 2,
-      "explain": "x e static: pornește 1, apoi două construcții -> 3.",
-      "source": ""
-    },
-    {
-      "id": "out_69",
-      "type": "mcq",
-      "topic": "OOP",
-      "q": "Ce afișează programul?\n\nclass A{ int f(){ return 1; } }\nclass B extends A{ int f(){ return 2; } }\nclass T{\n  public static void main(String[] args){\n    A ob = new B();\n    System.out.println(ob.f());\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "Eroare",
-        "0"
-      ],
-      "answer": 1,
-      "explain": "Polimorfism: se apelează B.f() -> 2.",
-      "source": "fileciteturn1file6"
-    },
-    {
-      "id": "out_70",
-      "type": "mcq",
-      "topic": "Exceptions",
-      "q": "Ce afișează programul?\n\nclass T{\n  static int f(){\n    try{ return 1; }\n    finally{ return 2; }\n  }\n  public static void main(String[] args){\n    System.out.println(f());\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "Eroare",
-        "Nu afișează"
-      ],
-      "answer": 1,
-      "explain": "return din finally suprascrie return din try -> 2.",
-      "source": ""
-    },
-    {
-      "id": "out_71",
-      "type": "mcq",
-      "topic": "JDBC",
-      "q": "Ce afișează programul?\n\nimport java.sql.*;\nclass T{\n  public static void main(String[] args) throws SQLException{\n    String url=\"jdbc:mysql://localhost:3306/test\";\n    Connection c=DriverManager.getConnection(url,\"root\",\"root\");\n    Statement s=c.createStatement();\n    ResultSet rs=s.executeQuery(\"select 1\");\n    System.out.println(rs!=null);\n    rs.close(); s.close(); c.close();\n  }\n}",
-      "choices": [
-        "true",
-        "false",
-        "Eroare la compilare",
-        "Eroare la rulare întotdeauna"
-      ],
-      "answer": 0,
-      "explain": "În mod normal executeQuery returnează un ResultSet (ne-null dacă interogarea a rulat).",
-      "source": "fileciteturn1file17"
-    },
-    {
-      "id": "out_72",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Map<String,Integer> m=new HashMap<>();\n    m.put(\"a\",1);\n    m.put(\"a\",2);\n    System.out.println(m.get(\"a\"));\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "null",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "Cheia 'a' e suprascrisă => 2.",
-      "source": ""
-    },
-    {
-      "id": "out_73",
-      "type": "mcq",
-      "topic": "Java basics",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    String a=\"Java\";\n    a += \" \" + 17;\n    System.out.println(a);\n  }\n}",
-      "choices": [
-        "Java17",
-        "Java 17",
-        "Eroare",
-        "17 Java"
-      ],
-      "answer": 1,
-      "explain": "Concatenarea cu String produce \"Java 17\".",
-      "source": ""
-    },
-    {
-      "id": "out_74",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(1); l.add(1); l.add(2);\n    System.out.println(l.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "List permite duplicate => size=3.",
-      "source": ""
-    },
-    {
-      "id": "out_75",
-      "type": "mcq",
-      "topic": "JDBC",
-      "q": "Ce afișează programul?\n\nimport java.sql.*;\nclass T{\n  public static void main(String[] args) throws SQLException{\n    String url=\"jdbc:mysql://localhost:3306/test\";\n    Connection c=DriverManager.getConnection(url,\"root\",\"root\");\n    Statement s=c.createStatement();\n    ResultSet rs=s.executeQuery(\"select 1\");\n    System.out.println(rs!=null);\n    rs.close(); s.close(); c.close();\n  }\n}",
-      "choices": [
-        "true",
-        "false",
-        "Eroare la compilare",
-        "Eroare la rulare întotdeauna"
-      ],
-      "answer": 0,
-      "explain": "În mod normal executeQuery returnează un ResultSet (ne-null dacă interogarea a rulat).",
-      "source": "fileciteturn1file17"
-    },
-    {
-      "id": "out_76",
-      "type": "mcq",
-      "topic": "Static",
-      "q": "Ce afișează programul?\n\nclass T{\n  static int x=1;\n  T(){ x++; }\n  public static void main(String[] args){\n    new T(); new T();\n    System.out.println(T.x);\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "3",
-        "Eroare"
-      ],
-      "answer": 2,
-      "explain": "x e static: pornește 1, apoi două construcții -> 3.",
-      "source": ""
-    },
-    {
-      "id": "out_77",
-      "type": "mcq",
-      "topic": "Collections",
-      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(1); l.add(1); l.add(2);\n    System.out.println(l.size());\n  }\n}",
-      "choices": [
-        "2",
-        "3",
-        "1",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "List permite duplicate => size=3.",
-      "source": ""
-    },
-    {
-      "id": "out_78",
-      "type": "mcq",
-      "topic": "Static",
-      "q": "Ce afișează programul?\n\nclass T{\n  static int x=1;\n  T(){ x++; }\n  public static void main(String[] args){\n    new T(); new T();\n    System.out.println(T.x);\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "3",
-        "Eroare"
-      ],
-      "answer": 2,
-      "explain": "x e static: pornește 1, apoi două construcții -> 3.",
-      "source": ""
-    },
-    {
-      "id": "out_79",
-      "type": "mcq",
-      "topic": "Static",
-      "q": "Ce afișează programul?\n\nclass T{\n  static int x=1;\n  T(){ x++; }\n  public static void main(String[] args){\n    new T(); new T();\n    System.out.println(T.x);\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "3",
-        "Eroare"
-      ],
-      "answer": 2,
-      "explain": "x e static: pornește 1, apoi două construcții -> 3.",
-      "source": ""
-    },
-    {
-      "id": "out_80",
-      "type": "mcq",
-      "topic": "Java basics",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    int s=0;\n    for(int i=1;i<=3;i++) s+=i;\n    System.out.println(s);\n  }\n}",
-      "choices": [
-        "3",
-        "6",
-        "0",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "1+2+3=6.",
-      "source": ""
-    },
-    {
-      "id": "out_81",
-      "type": "mcq",
-      "topic": "Exceptions",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    try{\n      int a=1/0;\n      System.out.print(\"A\");\n    }catch(ArithmeticException e){\n      System.out.print(\"B\");\n    }finally{\n      System.out.print(\"C\");\n    }\n  }\n}",
+      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    try{\n      int a = 1/0;\n      System.out.print(\"A\");\n    }catch(ArithmeticException e){\n      System.out.print(\"B\");\n    }finally{\n      System.out.print(\"C\");\n    }\n  }\n}",
       "choices": [
         "AC",
         "BC",
@@ -1349,101 +2141,52 @@
         "B"
       ],
       "answer": 1,
-      "explain": "1/0 aruncă -> catch(B) și finally(C) => BC.",
-      "source": ""
+      "explain": "1/0 aruncă -> catch(B) + finally(C) => BC."
     },
     {
-      "id": "out_82",
+      "id": "c25",
       "type": "mcq",
-      "topic": "JDBC",
-      "q": "Ce afișează programul?\n\nimport java.sql.*;\nclass T{\n  public static void main(String[] args) throws SQLException{\n    String url=\"jdbc:mysql://localhost:3306/test\";\n    Connection c=DriverManager.getConnection(url,\"root\",\"root\");\n    Statement s=c.createStatement();\n    ResultSet rs=s.executeQuery(\"select 1\");\n    System.out.println(rs!=null);\n    rs.close(); s.close(); c.close();\n  }\n}",
-      "choices": [
-        "true",
-        "false",
-        "Eroare la compilare",
-        "Eroare la rulare întotdeauna"
-      ],
-      "answer": 0,
-      "explain": "În mod normal executeQuery returnează un ResultSet (ne-null dacă interogarea a rulat).",
-      "source": "fileciteturn1file17"
-    },
-    {
-      "id": "out_83",
-      "type": "mcq",
-      "topic": "Java basics",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    int s=0;\n    for(int i=1;i<=3;i++) s+=i;\n    System.out.println(s);\n  }\n}",
-      "choices": [
-        "3",
-        "6",
-        "0",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "1+2+3=6.",
-      "source": ""
-    },
-    {
-      "id": "out_84",
-      "type": "mcq",
-      "topic": "Static",
-      "q": "Ce afișează programul?\n\nclass T{\n  static int x=1;\n  T(){ x++; }\n  public static void main(String[] args){\n    new T(); new T();\n    System.out.println(T.x);\n  }\n}",
-      "choices": [
-        "1",
-        "2",
-        "3",
-        "Eroare"
-      ],
-      "answer": 2,
-      "explain": "x e static: pornește 1, apoi două construcții -> 3.",
-      "source": ""
-    },
-    {
-      "id": "out_85",
-      "type": "mcq",
-      "topic": "Java basics",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    int s=0;\n    for(int i=1;i<=3;i++) s+=i;\n    System.out.println(s);\n  }\n}",
-      "choices": [
-        "3",
-        "6",
-        "0",
-        "Eroare"
-      ],
-      "answer": 1,
-      "explain": "1+2+3=6.",
-      "source": ""
-    },
-    {
-      "id": "out_86",
-      "type": "mcq",
-      "topic": "OOP",
-      "q": "Ce afișează programul?\n\nclass A{ int f(){ return 1; } }\nclass B extends A{ int f(){ return 2; } }\nclass T{\n  public static void main(String[] args){\n    A ob = new B();\n    System.out.println(ob.f());\n  }\n}",
+      "topic": "Exceptions",
+      "q": "Ce afișează programul?\n\nclass T{\n  static int f(){\n    try{ return 1; }\n    finally{ return 2; }\n  }\n  public static void main(String[] args){\n    System.out.println(f());\n  }\n}",
       "choices": [
         "1",
         "2",
         "Eroare",
-        "0"
+        "nimic"
       ],
       "answer": 1,
-      "explain": "Polimorfism: se apelează B.f() -> 2.",
-      "source": "fileciteturn1file6"
+      "explain": "return din finally suprascrie return din try."
     },
     {
-      "id": "out_87",
+      "id": "c26",
       "type": "mcq",
-      "topic": "Java basics",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    String a=\"Java\";\n    a += \" \" + 17;\n    System.out.println(a);\n  }\n}",
+      "topic": "Exceptions",
+      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    try{\n      int a = 1/0;\n      System.out.print(\"A\");\n    }catch(ArithmeticException e){\n      System.out.print(\"B\");\n    }finally{\n      System.out.print(\"C\");\n    }\n  }\n}",
       "choices": [
-        "Java17",
-        "Java 17",
-        "Eroare",
-        "17 Java"
+        "AC",
+        "BC",
+        "ABC",
+        "B"
       ],
       "answer": 1,
-      "explain": "Concatenarea cu String produce \"Java 17\".",
-      "source": ""
+      "explain": "1/0 aruncă -> catch(B) + finally(C) => BC."
     },
     {
-      "id": "out_88",
+      "id": "c27",
+      "type": "mcq",
+      "topic": "Exceptions",
+      "q": "Ce afișează programul?\n\nclass T{\n  static int f(){\n    try{ return 1; }\n    finally{ return 2; }\n  }\n  public static void main(String[] args){\n    System.out.println(f());\n  }\n}",
+      "choices": [
+        "1",
+        "2",
+        "Eroare",
+        "nimic"
+      ],
+      "answer": 1,
+      "explain": "return din finally suprascrie return din try."
+    },
+    {
+      "id": "c28",
       "type": "mcq",
       "topic": "Collections",
       "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(1); l.add(1); l.add(2);\n    System.out.println(l.size());\n  }\n}",
@@ -1454,53 +2197,315 @@
         "Eroare"
       ],
       "answer": 1,
-      "explain": "List permite duplicate => size=3.",
-      "source": ""
+      "explain": "List permite duplicate => 3."
     },
     {
-      "id": "out_89",
+      "id": "c29",
       "type": "mcq",
-      "topic": "OOP",
-      "q": "Ce afișează programul?\n\nclass A{ int f(){ return 1; } }\nclass B extends A{ int f(){ return 2; } }\nclass T{\n  public static void main(String[] args){\n    A ob = new B();\n    System.out.println(ob.f());\n  }\n}",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(2); l.add(2); l.add(2);\n    System.out.println(l.size());\n  }\n}",
       "choices": [
-        "1",
         "2",
-        "Eroare",
-        "0"
-      ],
-      "answer": 1,
-      "explain": "Polimorfism: se apelează B.f() -> 2.",
-      "source": "fileciteturn1file6"
-    },
-    {
-      "id": "out_90",
-      "type": "mcq",
-      "topic": "Java basics",
-      "q": "Ce afișează programul?\n\nclass T{\n  public static void main(String[] args){\n    int s=0;\n    for(int i=1;i<=3;i++) s+=i;\n    System.out.println(s);\n  }\n}",
-      "choices": [
         "3",
-        "6",
-        "0",
+        "1",
         "Eroare"
       ],
       "answer": 1,
-      "explain": "1+2+3=6.",
-      "source": ""
+      "explain": "List permite duplicate => 3."
     },
     {
-      "id": "out_91",
+      "id": "c30",
       "type": "mcq",
-      "topic": "Exceptions",
-      "q": "Ce afișează programul?\n\nclass T{\n  static int f(){\n    try{ return 1; }\n    finally{ return 2; }\n  }\n  public static void main(String[] args){\n    System.out.println(f());\n  }\n}",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(3); l.add(3); l.add(2);\n    System.out.println(l.size());\n  }\n}",
+      "choices": [
+        "2",
+        "3",
+        "1",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "List permite duplicate => 3."
+    },
+    {
+      "id": "c31",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(1); l.add(1); l.add(2);\n    System.out.println(l.size());\n  }\n}",
+      "choices": [
+        "2",
+        "3",
+        "1",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "List permite duplicate => 3."
+    },
+    {
+      "id": "c32",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(2); l.add(2); l.add(2);\n    System.out.println(l.size());\n  }\n}",
+      "choices": [
+        "2",
+        "3",
+        "1",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "List permite duplicate => 3."
+    },
+    {
+      "id": "c33",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(3); l.add(3); l.add(2);\n    System.out.println(l.size());\n  }\n}",
+      "choices": [
+        "2",
+        "3",
+        "1",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "List permite duplicate => 3."
+    },
+    {
+      "id": "c34",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(1); l.add(1); l.add(2);\n    System.out.println(l.size());\n  }\n}",
+      "choices": [
+        "2",
+        "3",
+        "1",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "List permite duplicate => 3."
+    },
+    {
+      "id": "c35",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(2); l.add(2); l.add(2);\n    System.out.println(l.size());\n  }\n}",
+      "choices": [
+        "2",
+        "3",
+        "1",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "List permite duplicate => 3."
+    },
+    {
+      "id": "c36",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(3); l.add(3); l.add(2);\n    System.out.println(l.size());\n  }\n}",
+      "choices": [
+        "2",
+        "3",
+        "1",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "List permite duplicate => 3."
+    },
+    {
+      "id": "c37",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(1); l.add(1); l.add(2);\n    System.out.println(l.size());\n  }\n}",
+      "choices": [
+        "2",
+        "3",
+        "1",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "List permite duplicate => 3."
+    },
+    {
+      "id": "c38",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(2); l.add(2); l.add(2);\n    System.out.println(l.size());\n  }\n}",
+      "choices": [
+        "2",
+        "3",
+        "1",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "List permite duplicate => 3."
+    },
+    {
+      "id": "c39",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    List<Integer> l=new ArrayList<>();\n    l.add(3); l.add(3); l.add(2);\n    System.out.println(l.size());\n  }\n}",
+      "choices": [
+        "2",
+        "3",
+        "1",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "List permite duplicate => 3."
+    },
+    {
+      "id": "c40",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(1); s.add(1); s.add(2);\n    System.out.println(s.size());\n  }\n}",
       "choices": [
         "1",
         "2",
-        "Eroare",
-        "Nu afișează"
+        "3",
+        "Eroare"
       ],
       "answer": 1,
-      "explain": "return din finally suprascrie return din try -> 2.",
-      "source": ""
+      "explain": "Set elimină duplicate; dacă valorile sunt diferite -> 2."
+    },
+    {
+      "id": "c41",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(2); s.add(2); s.add(2);\n    System.out.println(s.size());\n  }\n}",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "Eroare"
+      ],
+      "answer": 0,
+      "explain": "Set elimină duplicate; dacă valorile sunt diferite -> 2."
+    },
+    {
+      "id": "c42",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(3); s.add(3); s.add(2);\n    System.out.println(s.size());\n  }\n}",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "Set elimină duplicate; dacă valorile sunt diferite -> 2."
+    },
+    {
+      "id": "c43",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(1); s.add(1); s.add(2);\n    System.out.println(s.size());\n  }\n}",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "Set elimină duplicate; dacă valorile sunt diferite -> 2."
+    },
+    {
+      "id": "c44",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(2); s.add(2); s.add(2);\n    System.out.println(s.size());\n  }\n}",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "Eroare"
+      ],
+      "answer": 0,
+      "explain": "Set elimină duplicate; dacă valorile sunt diferite -> 2."
+    },
+    {
+      "id": "c45",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(3); s.add(3); s.add(2);\n    System.out.println(s.size());\n  }\n}",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "Set elimină duplicate; dacă valorile sunt diferite -> 2."
+    },
+    {
+      "id": "c46",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(1); s.add(1); s.add(2);\n    System.out.println(s.size());\n  }\n}",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "Set elimină duplicate; dacă valorile sunt diferite -> 2."
+    },
+    {
+      "id": "c47",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(2); s.add(2); s.add(2);\n    System.out.println(s.size());\n  }\n}",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "Eroare"
+      ],
+      "answer": 0,
+      "explain": "Set elimină duplicate; dacă valorile sunt diferite -> 2."
+    },
+    {
+      "id": "c48",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(3); s.add(3); s.add(2);\n    System.out.println(s.size());\n  }\n}",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "Set elimină duplicate; dacă valorile sunt diferite -> 2."
+    },
+    {
+      "id": "c49",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(1); s.add(1); s.add(2);\n    System.out.println(s.size());\n  }\n}",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "Eroare"
+      ],
+      "answer": 1,
+      "explain": "Set elimină duplicate; dacă valorile sunt diferite -> 2."
+    },
+    {
+      "id": "c50",
+      "type": "mcq",
+      "topic": "Collections",
+      "q": "Ce afișează programul?\n\nimport java.util.*;\nclass T{\n  public static void main(String[] args){\n    Set<Integer> s=new HashSet<>();\n    s.add(2); s.add(2); s.add(2);\n    System.out.println(s.size());\n  }\n}",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "Eroare"
+      ],
+      "answer": 0,
+      "explain": "Set elimină duplicate; dacă valorile sunt diferite -> 2."
     }
   ]
 }

@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Quiz Java – 100 întrebări</title>
+  <title>Quiz Java – 200 întrebări (combinate)</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <header>
-  <h1>Quiz Java – 100 întrebări</h1>
-  <p class="sub">Teorie + „ce afișează codul”, stil „școala auto”. Rulează local în browser.</p>
+  <h1>Quiz Java – 200 întrebări (combinate)</h1>
+  <p class="sub">Teorie + „Ce afișează codul?”. Fără întrebări repetate în aceeași sesiune (dacă nu depășești numărul disponibil).</p>
 </header>
 
 <main>
@@ -18,8 +18,8 @@
       <div class="field">
         <label for="mode">Mod</label>
         <select id="mode">
-          <option value="practice" selected>Practice (adaptiv)</option>
-          <option value="exam">Exam (random, feedback la final)</option>
+          <option value="exam" selected>Exam (fără repetări)</option>
+          <option value="practice">Practice (fără repetări, cu explicații imediat)</option>
         </select>
       </div>
 
@@ -32,20 +32,15 @@
 
       <div class="field">
         <label for="count">Întrebări</label>
-        <input id="count" type="number" min="5" max="100" value="20" />
+        <input id="count" type="number" min="5" max="200" value="20" />
       </div>
 
       <div class="field">
         <label>&nbsp;</label>
         <button id="startBtn">Start</button>
       </div>
-
-      <div class="field">
-        <label>&nbsp;</label>
-        <button id="resetBtn" class="ghost">Reset progres</button>
-      </div>
     </div>
-    <div class="hint">Rulează cu: <code>python -m http.server 8000</code> și deschide <code>http://localhost:8000</code>.</div>
+    <div class="hint">Rulează local: <code>python -m http.server 8000</code> și deschide <code>http://localhost:8000</code>.</div>
   </section>
 
   <section class="panel" id="quizPanel" hidden>
@@ -66,7 +61,6 @@
     <details id="explainBox" class="explain" hidden>
       <summary>Explicație</summary>
       <div id="explainText"></div>
-      <div class="src" id="sourceText"></div>
     </details>
   </section>
 
@@ -81,7 +75,7 @@
 </main>
 
 <footer>
-  <small>Offline. Progresul se salvează în <code>localStorage</code>.</small>
+  <small>Garanție: într-o sesiune de quiz se face selecție fără înlocuire (fără repetări) din setul filtrat.</small>
 </footer>
 
 <script src="app.js"></script>

@@ -23,7 +23,6 @@ button.danger{border-color:#6c2a2a;color:#ffb0b0}
 .choice input{margin-top:3px}
 .explain{margin-top:12px}
 .explain summary{cursor:pointer}
-.src{margin-top:8px;color:#b9c0cc;font-size:.9rem}
 #reviewBox{margin-top:10px;display:flex;flex-direction:column;gap:10px}
 .reviewItem{padding:10px 12px;border:1px solid #2a344a;border-radius:12px;background:#0e1320}
 .correct{border-color:#1f5a33}
